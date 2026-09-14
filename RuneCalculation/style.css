@@ -241,3 +241,31 @@ input[type="text"], input[type="number"] {
     color: #facc15 !important;
     font-weight: bold;
 }
+
+.rune-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden; /* Keeps hidden content clean before hover */
+}
+
+.rune-expand-content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out, margin-top 0.3s ease;
+    overflow: hidden;
+}
+
+.expand-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 10px 0;
+}
+
+.rune-card:hover .rune-expand-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.rune-card:hover {
+    transform: translateY(-2px);
+}

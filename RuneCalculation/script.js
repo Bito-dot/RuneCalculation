@@ -113,19 +113,19 @@ function formatTime(seconds) {
 const gameData = {
     "Realm 1": {
         "Basic": [
-            { name: "Rookie", baseOdds: 1.25, type: "Normal" },
-            { name: "Learner", baseOdds: 6.67, type: "Normal" },
-            { name: "Trained", baseOdds: 33.29, type: "Normal" },
-            { name: "Skilled", baseOdds: 200, type: "Normal" },
-            { name: "Expert", baseOdds: "50k", type: "Normal" },
-            { name: "Master", baseOdds: "1M", type: "Normal" },
-            { name: "Grandmaster", baseOdds: "40M", type: "Normal" },
-            { name: "Celestial", baseOdds: "625B", type: "Normal" },
-            { name: "Immortal", baseOdds: "500Sp", type: "Normal" },
-            { name: "Shadow", baseOdds: "2.5Sx", type: "Noobinial" },
-            { name: "Phantom", baseOdds: "2.5Oc", type: "Noobinial" },
-            { name: "Atomic", baseOdds: "300QdDe", type: "Noobinial" },
-            { name: "Chronos Core", baseOdds: "3.5QnDe", type: "Noobinial", bg: "linear-gradient(135deg, #0f172a 0%, #312e81 40%, #0284c7 70%, #38bdf8 100%)" }
+            { name: "Rookie", baseOdds: 1.25, type: "Normal", maxStats: { oof: "x101", rebirth: "x10" }},
+            { name: "Learner", baseOdds: 6.67, type: "Normal", maxStats: { rebirth: "x61", runeLuck: "x1.5" }},
+            { name: "Trained", baseOdds: 33.29, type: "Normal", maxStats: { oof: "x151", rebirth: "x61", fire: "x46", runeBulk: "+5" }},
+            { name: "Skilled", baseOdds: 200, type: "Normal", maxStats: { oof: "x501", fire: "x51", runeLuck: "x1.75" }},
+            { name: "Expert", baseOdds: "50k", type: "Normal", maxStats: { oof: "x751", fire: "x114", runeSpeed: "x1.5", runeBulk: "x3" }},
+            { name: "Master", baseOdds: "1M", type: "Normal", maxStats: { oof: "x1.73k", rebirth: "x576", fire: "x116", blaze: "x24", runeBulk: "+10" }},
+            { name: "Grandmaster", baseOdds: "40M", type: "Normal", maxStats: { oof: "x4.75k", rebirth: "x72.3", runeSpeed: "x1.5", runeBulk: "x4" }},
+            { name: "Celestial", baseOdds: "625B", type: "Normal", maxStats: { oof: "x56.3k", fire: "x1.12k", rebirth: "x5.63k", blaze: "x151", runeBulk: "x21", runeLuck: "x4" }},
+            { name: "Immortal", baseOdds: "500Sp", type: "Normal", maxStats: { oof: "x125k", fire: "x2.5k", rebirth: "x12.5k", blaze: "x251", runeBulk: "x31" , runeLuck: "x6" }},
+            { name: "Shadow", baseOdds: "2.5Sx", type: "Noobinial",  maxStats: { oof: "x501", blaze: "x76", prism: "x1.25", coin: "x3.5", runeBulk: "x51" , bread: "x26" }},
+            { name: "Phantom", baseOdds: "2.5Oc", type: "Noobinial", maxStats: { oof: "20k", fire: "x1k", cash: "x2k", prism: "x1.35", runeBulk: "x501" , bread: "x101" }},
+            { name: "Atomic", baseOdds: "300QdDe", type: "Noobinial", maxStats: { oof: "x20k", fire: "x2k", cash: "x5k", prism: "x1.25", tierLuck: "x51" , tierBulk: "x26", bread: "x101" }},
+            { name: "Chronos Core", baseOdds: "3.5QnDe", type: "Noobinial", bg: "linear-gradient(135deg, #0f172a 0%, #312e81 40%, #0284c7 70%, #38bdf8 100%)",  maxStats: { fire: "x3k", cash: "x1.05k", prism: "x1.14", runeBulk: "x41", tierBulk: "x61", hackPoints: "x4", wheat: "x16" }}
         ],
         "Super": [
             { name: "Initiate", baseOdds: 1.11, type: "Normal" },
@@ -497,7 +497,6 @@ function calculate() {
     itemsList.forEach(item => {
         const isNoobinial = item.type.toLowerCase().includes("noobinial");
 
-        // Strict Isolation: Prism categories use Prism Luck & Prism RPS; Rune categories use Rune Luck & Rune RPS
         const currentLuck = isPrismCategory ? prismFinalLuck : runeFinalLuck;
         const currentRps = isPrismCategory ? prismTotalRps : runeTotalRps;
 
@@ -512,6 +511,46 @@ function calculate() {
         let oddsDisplay = isInstant ? `<span class="instant">Instant Collect</span>` : `1 / ${formatSuffixNumber(effectiveOdds)} chance`;
         let timeDisplay = isInstant ? `<span class="instant">Instant</span>` : formatTime(avgSeconds);
 
+        // Label mapping for custom stats
+        const statLabels = {
+            oof: "Max Oof",
+            rebirth: "Max Rebirth",
+            fire: "Max Fire",
+            runeBulk: "Max Rune Bulk",
+            runeLuck: "Max Rune Luck",
+            runeSpeed: "Max Rune Speed",
+            blaze: "Max Blaze",
+            prism: "Max Prism",
+            coin: "Max Coin",
+            bread: "Max Bread",
+            cash: "Max Cash",
+            tierLuck: "Max Tier Luck",
+            tierBulk: "Max Tier Bulk",
+            hackPoints: "Max Hack Points",
+            wheat: "Max Wheat"
+        };
+
+        // Dynamically build stat rows for stats that exist in gameData
+        let statsHtml = "";
+        if (item.maxStats) {
+            Object.entries(item.maxStats).forEach(([key, value]) => {
+                if (value) {
+                    const label = statLabels[key] || key;
+                    statsHtml += `<div class="rune-stat"><strong>${label}:</strong> <code>${value}</code></div>`;
+                }
+            });
+        }
+
+        // Only output the expansion section if at least one stat exists
+        let expandSection = "";
+        if (statsHtml !== "") {
+            expandSection = `
+        <div class="rune-expand-content">
+          <div class="expand-divider"></div>
+          ${statsHtml}
+        </div>`;
+        }
+
         htmlOutput += `
   <div class="rune-card ${isPrismCategory ? "prism-card" : ""} ${isNoobinial ? "noobinial" : ""}" 
        data-name="${item.name.toLowerCase().replace(/\s+/g, '-')}"
@@ -522,6 +561,8 @@ function calculate() {
     <div class="rune-stat"><strong>Base Odds:</strong> 1 / ${formatSuffixNumber(rawBaseOdds)}</div>
     <div class="rune-stat"><strong>Effective Odds:</strong> ${oddsDisplay}</div>
     <div class="rune-stat"><strong>Avg Time to Get:</strong> <code>${timeDisplay}</code></div>
+
+    ${expandSection}
   </div>
 `;
     });
