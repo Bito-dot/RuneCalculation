@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Speed & Odds Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔮 Rune Speed & Odds Calculator</h1>
+
+        <div class="input-section">
+            <!-- Rune Inputs Row -->
+            <div class="inputs-row">
+                <!-- Speed Input -->
+                <div class="input-group">
+                    <label for="speedSec">Rune Speed (Sec/Roll)</label>
+                    <div class="field-with-boost">
+                        <input type="number" id="speedSec" value="0.2" step="0.01" min="0.05">
+                        <label class="boost-label">
+                            <input type="checkbox" id="speedBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Bulk Input -->
+                <div class="input-group">
+                    <label for="bulk">Rune Bulk</label>
+                    <div class="field-with-boost">
+                        <input type="text" id="bulk" value="2">
+                        <label class="boost-label">
+                            <input type="checkbox" id="bulkBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Luck Input -->
+                <div class="input-group">
+                    <label for="luck">Rune Luck</label>
+                    <div class="field-with-boost">
+                        <input type="text" id="luck" value="10">
+                        <label class="boost-label">
+                            <input type="checkbox" id="luckBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prism Inputs Row (Placed directly below Rune inputs) -->
+            <div class="inputs-row">
+                <!-- Prism Speed Input -->
+                <div class="input-group">
+                    <label for="prismSpeedSec">Prism Speed (Sec/Roll)</label>
+                    <div class="field-with-boost">
+                        <input type="number" id="prismSpeedSec" value="0.05" step="0.01" min="0.05">
+                        <label class="boost-label">
+                            <input type="checkbox" id="prismSpeedBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Prism Bulk Input -->
+                <div class="input-group">
+                    <label for="prismBulk">Prism Bulk</label>
+                    <div class="field-with-boost">
+                        <input type="text" id="prismBulk" placeholder="e.g. 1k, 1M">
+                        <label class="boost-label">
+                            <input type="checkbox" id="prismBulkBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Prism Luck Input -->
+                <div class="input-group">
+                    <label for="prismLuck">Prism Luck</label>
+                    <div class="field-with-boost">
+                        <input type="text" id="prismLuck" placeholder="e.g. 100, 1.5M">
+                        <label class="boost-label">
+                            <input type="checkbox" id="prismLuckBoost"> 2x
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toggles Row -->
+            <div class="toggles-row">
+                <label class="hide-toggle-label">
+                    <input type="checkbox" id="hideInstantToggle">
+                    <span>Hide Instant Collect Runes</span>
+                </label>
+                <label class="hide-toggle-label">
+                    <input type="checkbox" id="prismHideInstantToggle">
+                    <span>Hide Instant Collect Prisms</span>
+                </label>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Horizontal Realm Buttons -->
+            <div class="selector-group">
+                <span class="selector-label">Active Realm:</span>
+                <div id="realmContainer" class="button-row"></div>
+            </div>
+
+            <!-- Horizontal Category Buttons -->
+            <div class="selector-group">
+                <span class="selector-label">Category:</span>
+                <div id="categoryContainer" class="button-row"></div>
+            </div>
+        </div>
+
+        <!-- Metric Outputs -->
+        <div class="metric-box">
+            <div>Total Rune RPS: <span id="rpsOutput">0.00</span></div>
+            <div>Total Prism RPS: <span id="prismRpsOutput">0.00</span></div>
+        </div>
+
+        <h2>Rune & Prism Details</h2>
+        <!-- Single Grid for All Cards -->
+        <div id="runeResultContainer" class="rune-grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
