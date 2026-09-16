@@ -340,6 +340,22 @@ const gameData = {
             { name: "Tidal Wave", baseOdds: "10OcVt", type: "Noobinial" },
             { name: "Tsunami", baseOdds: "10NoVt", type: "Noobinial" }
         ],
+    },
+    "Events": {
+        "Football": [
+            { name: "Scuff", baseOdds: 1.12, type: "Normal", maxStats: { goals: "x5.5", oof: "x151" } },
+            { name: "Fade", baseOdds: "10", type: "Normal", maxStats: { goals: "x7.6", rebirth: "x251" } },
+            { name: "Stitch", baseOdds: "1k", type: "Normal", maxStats: { goals: "x11.5", fire: "x151" } },
+            { name: "Kickoff", baseOdds: "100k", type: "Normal", maxStats: { goals: "x14.2", cash: "x110" } },
+            { name: "Dribble", baseOdds: "10M", type: "Normal", maxStats: { goals: "x19", coin: "x4", footballRuneBulk: "+400" } },
+            { name: "Tackle", baseOdds: "1T", type: "Normal", maxStats: { goals: "x31", water: "x16", wheat: "x11", footballRuneLuck: "x2" } },
+            { name: "Corner", baseOdds: "100Qd", type: "Normal", maxStats: { goals: "x5", gems: "x13", bread: "x13", footballRuneBulk: "+300" } },
+            { name: "Volley", baseOdds: "10Sx", type: "Normal", maxStats: { goals: "x41", ash: "x5", footballRuneLuck: "x4" } },
+            { name: "Header", baseOdds: "100No", type: "Normal", maxStats: { goals: "x106", tierLuck: "x42.2", tierBulk: "x34.79", footballRuneLuck: "x4", footballRuneBulk: "x9" } },
+            { name: "Finale", baseOdds: "1Sx", type: "Noobinial", maxStats: { goals: "x25", oof: "x21", cash: "x7", fire: "x17", footballRuneBulk: "x71" } },
+            { name: "Victory", baseOdds: "100Sx", type: "Noobinial", maxStats: { goals: "x21", wheat: "x21", coin: "x7", bread: "x17", footballRuneBulk: "x16" } },
+            { name: "Iconic", baseOdds: "2.5Sp", type: "Noobinial", maxStats: { goals: "x36", oreDamage: "x2", gem: "x2", oreStats: "x3", prism: "x1.2", footballRuneBulk: "x5" } }
+        ],
     }
 };
 
@@ -532,13 +548,20 @@ function calculate() {
             planks: "Max Planks",
             ash: "Max Ash",
             wood: "Max Wood",
+            gems: "Max Gems",
             bones: "Max Bones",
             sand: "Max Sand",
+            water: "Max Water",
             shovelDamage: "Max Shovel Damage",
+            oreDamage: "Max Ore Damage",
+            oreStats: "Max Ore Stats",
             souls: "Max Souls",
             meat: "Max Meat",
             prismRuneLuck: "Max Prism Rune Luck",
-            prismRuneBulk: "Max Prism Rune Bulk"
+            prismRuneBulk: "Max Prism Rune Bulk",
+            goals: "Max Goals",
+            footballRuneLuck: "Max Football Rune Luck",
+            footballRuneBulk: "Max Football Rune Bulk"
         };
 
         // Dynamically build stat rows for stats that exist in gameData
