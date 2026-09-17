@@ -234,43 +234,43 @@ const gameData = {
     },
     "Realm 3": {
         "Dunes": [
-            { name: "Marrow", baseOdds: 1.01, type: "Normal" },
-            { name: "Femur", baseOdds: "333k", type: "Normal" },
-            { name: "Skull", baseOdds: "1B", type: "Normal" },
-            { name: "Dune", baseOdds: "375B", type: "Normal" },
-            { name: "Oasis", baseOdds: "43.5Qd", type: "Normal" },
-            { name: "Mirage", baseOdds: "250Qn", type: "Normal" },
-            { name: "Sunspire", baseOdds: "4.29Sp", type: "Normal" },
-            { name: "Eternal Sand", baseOdds: "5.08Oc", type: "Normal" },
-            { name: "Sphinx", baseOdds: "30DDe", type: "Noobinial" },
-            { name: "Anubis", baseOdds: "75NoDe", type: "Noobinial" },
-            { name: "Ancient Fragment", baseOdds: "35Vt", type: "Noobinial" }
+            { name: "Marrow", baseOdds: 1.01, type: "Normal", maxStats: { meat: "x101", gems: "x6", oof: "x1.25k" } },
+            { name: "Femur", baseOdds: "333k", type: "Normal", maxStats: { bones: "x101", swordDamage: "x2.5", wood: "x4.5" } },
+            { name: "Skull", baseOdds: "1B", type: "Normal", maxStats: { meat: "x121", planks: "x31", oof: "x1k" } },
+            { name: "Dune", baseOdds: "375B", type: "Normal", maxStats: { meat: "x121", runeLuck: "x3.5", oof: "x1.4k", bones: "x31" } },
+            { name: "Oasis", baseOdds: "43.5Qd", type: "Normal", maxStats: { water: "x31", oof: "x2k", bones: "x31" } },
+            { name: "Mirage", baseOdds: "250Qn", type: "Normal", maxStats: { water: "x81", oof: "x3k", meat: "x29", tierLuck: "x31", swordDamage: "x3" } },
+            { name: "Sunspire", baseOdds: "4.29Sp", type: "Normal", maxStats: { ice: "x31", oof: "x3.5k", souls: "x6", runeLuck: "x2" } },
+            { name: "Eternal Sand", baseOdds: "5.08Oc", type: "Normal", maxStats: { souls: "x31", oof: "x31", meat: "x31", bones: "x31", ash: "x31", runeSpeed: "x1.45" } },
+            { name: "Sphinx", baseOdds: "30DDe", type: "Noobinial", maxStats: { souls: "x15k", oof: "x75k", meat: "x18.79k", bones: "x7.5M", tierLuck: "x6", runeSpeed: "x2" } },
+            { name: "Anubis", baseOdds: "75NoDe", type: "Noobinial", maxStats: { souls: "251", oof: "5k", tierLuck: "x26", bones: "x26", sand: "x51", runeSpeed: "x4.75" } },
+            { name: "Ancient Fragment", baseOdds: "35Vt", type: "Noobinial", maxStats: { souls: "x131", sand: "x4", runeBulk: "x2.5", oof: "x326", tierLuck: "x17.3", bones: "x4.25" } }
         ],
         "Sunfire": [
-            { name: "Ashen", baseOdds: 1.01, type: "Normal" },
-            { name: "Parched", baseOdds: "43.5M", type: "Normal" },
-            { name: "Cactus", baseOdds: "6.9B", type: "Normal" },
-            { name: "Scorch", baseOdds: "3.65T", type: "Normal" },
-            { name: "Spark", baseOdds: "44.6Sx", type: "Normal" },
-            { name: "Flare", baseOdds: "4.34Oc", type: "Normal" },
-            { name: "Desert Jewel", baseOdds: "7.52UDe", type: "Normal" },
-            { name: "Solar Titan", baseOdds: "2.67QdDe", type: "Normal" },
-            { name: "Immortal Sun", baseOdds: "3.94SpDe", type: "Normal" },
-            { name: "Pharaoh", baseOdds: "200NoDe", type: "Noobinial" },
-            { name: "Horus", baseOdds: "1.5Vt", type: "Noobinial" },
-            { name: "Secret of Egypt", baseOdds: "300Vt", type: "Noobinial" }
+            { name: "Ashen", baseOdds: 1.01, type: "Normal", maxStats: { souls: "x3", oof: "x1.3k" } },
+            { name: "Parched", baseOdds: "43.5M", type: "Normal", maxStats: { bones: "x46", oof: "x6k" } },
+            { name: "Cactus", baseOdds: "6.9B", type: "Normal", maxStats: { oof: "x3.3k", bones: "x81", runeLuck: "x1.5" } },
+            { name: "Scorch", baseOdds: "3.65T", type: "Normal", maxStats: { oof: "x3.75k", meat: "x91", tierLuck: "x100" } },
+            { name: "Spark", baseOdds: "44.6Sx", type: "Normal", maxStats: { oof: "x5.63k", meat: "x61" } },
+            { name: "Flare", baseOdds: "4.34Oc", type: "Normal", maxStats: { souls: "x5", oof: "x6.38k", bones: "x25", runeSpeed: "x1.5" } },
+            { name: "Desert Jewel", baseOdds: "7.52UDe", type: "Normal", maxStats: { souls: "x6", oof: "x8k", runeBulk: "x1.5", tierLuck: "x6" } },
+            { name: "Solar Titan", baseOdds: "2.67QdDe", type: "Normal", maxStats: { souls: "x41", oof: "x15k", tierBulk: "x6", tierLuck: "x16", runeLuck: "x3" } },
+            { name: "Immortal Sun", baseOdds: "3.94SpDe", type: "Normal", maxStats: { souls: "x31", oof: "x350k", bones: "x36", runeBulk: "x1.5", runeLuck: "x3.5" } },
+            { name: "Pharaoh", baseOdds: "200NoDe", type: "Noobinial", maxStats: { sand: "x5", bones: "x4", oof: "x75k", runeBulk: "x4", runeSpeed: "x1.5", prism: "x1.5", shovelDamage: "x2" } },
+            { name: "Horus", baseOdds: "1.5Vt", type: "Noobinial", maxStats: { sand: "x11", souls: "x161", oof: "x4M", runeBulk: "x4", runeSpeed: "x2", runeLuck: "x2", tierLuck: "x41" } },
+            { name: "Secret of Egypt", baseOdds: "300Vt", type: "Noobinial", maxStats: { souls: "x1.5k", sand: "x10", runeBulk: "x2", runeSpeed: "x1.6", oof: "x601", tierLuck: "x13", tierBulk: "x7" } }
         ],
         "Sunstone Prism": [
-            { name: "Cinderfall", baseOdds: 1.01, type: "Prism" },
-            { name: "Shadowflare", baseOdds: "1.5B", type: "Prism" },
-            { name: "Dawnshard", baseOdds: "75B", type: "Prism" },
-            { name: "Lumina", baseOdds: "1.5T", type: "Prism" },
-            { name: "Pyrestone", baseOdds: "22.5T", type: "Prism" },
-            { name: "Helios", baseOdds: "500T", type: "Prism" },
-            { name: "Starforge", baseOdds: "20Qd", type: "Prism" },
-            { name: "Celestia", baseOdds: "1.5Qn", type: "Prism" },
-            { name: "Eternis", baseOdds: "75T", type: "Noobinial Prism" },
-            { name: "Omnira", baseOdds: "1.25Qd", type: "Noobinial Prism" }
+            { name: "Cinderfall", baseOdds: 1.01, type: "Prism", maxStats: { oof: "x339", fire: "x1.69k" } },
+            { name: "Shadowflare", baseOdds: "1.5B", type: "Prism", maxStats: { prismRuneLuck: "x11", prismRuneBulk: "+1k", cash: "x1.25M", wood: "x2.5k" } },
+            { name: "Dawnshard", baseOdds: "75B", type: "Prism", maxStats: { prismRuneBulk: "x5", wheat: "x5k", bread: "x400k" } },
+            { name: "Lumina", baseOdds: "1.5T", type: "Prism", maxStats: { prismRuneSpeed: "x4", prismRuneLuck: "x11", bread: "x125k", water: "x1.88k" } },
+            { name: "Pyrestone", baseOdds: "22.5T", type: "Prism", maxStats: { prismRuneLuck: "x10", ice: "x2.5k", wood: "x50k", oof: "x201" } },
+            { name: "Helios", baseOdds: "500T", type: "Prism", maxStats: { prismRuneLuck: "x21", prismRuneBulk: "+1.5k", meat: "x26", planks: "x1k", ash: "x1.5k", shovelDamage: "x3" } },
+            { name: "Starforge", baseOdds: "20Qd", type: "Prism", maxStats: { prismRuneLuck: "x76", prismRuneBulk: "+1k", planks: "x5k", bones: "x100", hackPoints: "x1.5k", bread: "x100k", gems: "x10" } },
+            { name: "Celestia", baseOdds: "1.5Qn", type: "Prism", maxStats: { prismRuneBulk: "x5", coin: "x376", sand: "x1.5", tierLuck: "x38.5", souls: "x51", footballRuneBulk: "x1.5", oof: "x38.5" } },
+            { name: "Eternis", baseOdds: "75T", type: "Noobinial Prism", maxStats: { prismRuneSpeed: "x5", prismRuneBulk: "+3k", oof: "x46", prism: "x1.1", runeBulk: "x2.5", sand: "x2.5", souls: "x91", footballRuneBulk: "x3.5" } },
+            { name: "Omnira", baseOdds: "1.25Qd", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x4", prismRuneLuck: "x18.5", prism: "x1.25", oof: "x71", sand: "x4.5", souls: "x176", runeBulk: "x1.25", tierLuck: "x71" } }
         ]
     },
     "Realm 4": {
@@ -570,6 +570,7 @@ function calculate() {
             blackholes: "Max Blackholes",
             alienCash: "Max Alien Cash",
             knowledge: "Max Knowledge",
+            swordDamage: "Max Sword Damage",
         };
 
         // Dynamically build stat rows for stats that exist in gameData
