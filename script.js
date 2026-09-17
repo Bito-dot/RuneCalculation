@@ -190,46 +190,46 @@ const gameData = {
     },
     "Realm 2": {
         "Snowy": [
-            { name: "Snow", baseOdds: 1.01, type: "Normal" },
-            { name: "Frost", baseOdds: "1Qn", type: "Normal" },
-            { name: "Ice", baseOdds: "100Qn", type: "Normal" },
-            { name: "Hail", baseOdds: "2Sx", type: "Normal" },
-            { name: "Glacier", baseOdds: "100Sp", type: "Normal" },
-            { name: "Blizzard", baseOdds: "500DDe", type: "Normal" },
-            { name: "Tundra", baseOdds: "2QdDe", type: "Normal" },
-            { name: "Arctic", baseOdds: "400OcDe", type: "Normal" },
-            { name: "Permafrost", baseOdds: "190Vt", type: "Normal" },
-            { name: "Whiteout", baseOdds: "500SxDe", type: "Noobinial" },
-            { name: "Icebound", baseOdds: "500SpDe", type: "Noobinial" },
-            { name: "Everfrost", baseOdds: "150OcDe", type: "Noobinial" }
+            { name: "Snow", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1k", water: "x16" } },
+            { name: "Frost", baseOdds: "1Qn", type: "Normal", maxStats: { oof: "x2k", ice: "x16" } },
+            { name: "Ice", baseOdds: "100Qn", type: "Normal", maxStats: { oof: "x2.25k", water: "x21", ice: "x26", runeLuck: "x2" } },
+            { name: "Hail", baseOdds: "2Sx", type: "Normal", maxStats: { water: "x31", ice: "x31", coin: "x4" } },
+            { name: "Glacier", baseOdds: "100Sp", type: "Normal", maxStats: { oof: "1.5k", ice: "x41", runeSpeed: "x1.5", runeBulk: "x2", runeLuck: "x1.75" } },
+            { name: "Blizzard", baseOdds: "500DDe", type: "Normal", maxStats: { water: "x47", ice: "x58.5", ash: "x18.2", runeBulk: "x2" } },
+            { name: "Tundra", baseOdds: "2QdDe", type: "Normal", maxStats: { oof: "x1.19k", wood: "x72.3", water: "x5", fire: "x951", ash: "x24.8", runeSpeed: "x1.5" } },
+            { name: "Arctic", baseOdds: "400OcDe", type: "Normal", maxStats: { oof: "x1.19k", water: "x5", fire: "x951", runeLuck: "x1.5" } },
+            { name: "Permafrost", baseOdds: "190Vt", type: "Normal", maxStats: { oof: "x751", ice: "x38.5", wood: "x101", fire: "x500k", ash: "x51", runeLuck: "x5" } },
+            { name: "Whiteout", baseOdds: "500SxDe", type: "Noobinial", maxStats: { oof: "x501", ice: "x8.5", wood: "x61", gems: "x7.5", ash: "x9.5", runeBulk: "x3.5" } },
+            { name: "Icebound", baseOdds: "500SpDe", type: "Noobinial", maxStats: { oof: "x1.12k", ice: "x16", tierLuck: "x151", gems: "x12.3", oreDamage: "x8.5", runeSpeed: "x2.88" } },
+            { name: "Everfrost", baseOdds: "150OcDe", type: "Noobinial", maxStats: { oof: "x1k", ice: "x31", prism: "x1.5", gems: "x11", oreDamage: "x7.75", runeBulk: "x4.25" } }
         ],
         "Deepcore": [
-            { name: "Dust", baseOdds: 1.01, type: "Normal" },
-            { name: "Pebble", baseOdds: "10Sx", type: "Normal" },
-            { name: "Hollow", baseOdds: "20Sx", type: "Normal" },
-            { name: "Echo", baseOdds: "10Sp", type: "Normal" },
-            { name: "Stalagmite", baseOdds: "200Sp", type: "Normal" },
-            { name: "Cavern", baseOdds: "50Oc", type: "Normal" },
-            { name: "Crystalborn", baseOdds: "10No", type: "Normal" },
-            { name: "Earthshaker", baseOdds: "10De", type: "Normal" },
-            { name: "Golemheart", baseOdds: "100UDe", type: "Normal" },
-            { name: "Stone Titan", baseOdds: "10No", type: "Noobinial" },
-            { name: "Cave Guardian", baseOdds: "7.5De", type: "Noobinial" },
-            { name: "Deep Spirit", baseOdds: "250De", type: "Noobinial" }
+            { name: "Dust", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1k", oreStats: "x3" } },
+            { name: "Pebble", baseOdds: "10Sx", type: "Normal", maxStats: { gems: "x7", oof: "x801", oreStats: "x2.1", ice: "x11" } },
+            { name: "Hollow", baseOdds: "20Sx", type: "Normal", maxStats: { fire: "x15k", oreDamage: "x1.14", gems: "x5", ice: "x21" } },
+            { name: "Echo", baseOdds: "10Sp", type: "Normal", maxStats: { oof: "x801", oreStats: "x2.5", runeLuck: "x2", ice: "x51" } },
+            { name: "Stalagmite", baseOdds: "200Sp", type: "Normal", maxStats: { oof: "x601", oreDamage: "x1.14", gems: "x2.5", fire: "x38.5", ice: "x81" } },
+            { name: "Cavern", baseOdds: "50Oc", type: "Normal", maxStats: { oof: "x864", gems: "x2.5", water: "x38", runeLuck: "x2" } },
+            { name: "Crystalborn", baseOdds: "10No", type: "Normal", maxStats: { oreDamage: "x1.14", oreStats: "x2", ice: "x24.8", runeLuck: "x2.25" } },
+            { name: "Earthshaker", baseOdds:"10De", type:"Normal", maxStats: { gems: "x57.3", oreDamage: "x2.5", runeBulk: "x6", runeSpeed: "x2" } },
+            { name: "Golemheart", baseOdds: "100UDe", type: "Normal", maxStats: { gems: "x126", oreDamage: "x16", oof: "x500k", runeLuck: "x6" } },
+            { name: "Stone Titan", baseOdds: "10No", type: "Noobinial", maxStats: { gems: "x46", oreStats: "x8.5", oof: "x751", oreDamage: "x2.25", tierBulk: "x46" } },
+            { name: "Cave Guardian", baseOdds: "7.5De", type: "Noobinial", maxStats: { gems: "x26", oreStats: "x16", oof: "x2.5k", runeSpeed: "x1.5", tierLuck: "x51" } },
+            { name: "Deep Spirit", baseOdds: "250De", type: "Noobinial", maxStats: { gems: "x61", prism: "x1.2", oreDamage: "x2", tierBulk: "x46", tierLuck: "x76" } }
         ],
         "Shard": [
-            { name: "Air Shard", baseOdds: 1.01, type: "Normal" },
-            { name: "Water Shard", baseOdds: "1.5QdVt", type: "Normal" },
-            { name: "Earth Shard", baseOdds: "400QnVt", type: "Normal" },
-            { name: "Fire Shard", baseOdds: "75SpVt", type: "Normal" },
-            { name: "Ice Shard", baseOdds: "12NoVt", type: "Normal" },
-            { name: "Poison Shard", baseOdds: "125UTg", type: "Normal" },
-            { name: "Metal Shard", baseOdds: "1.5e104", type: "Normal" },
-            { name: "Light Shard", baseOdds: "3.2e106", type: "Normal" },
-            { name: "Shadow Shard", baseOdds: "4.0e108", type: "Normal" },
-            { name: "Galactic Shard", baseOdds: "5QdVt", type: "Noobinial" },
-            { name: "Elemental Shard", baseOdds: "100QdVt", type: "Noobinial" },
-            { name: "Dragon Shard", baseOdds: "2QnVt", type: "Noobinial" }
+            { name: "Air Shard", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x3.12", gems: "x15", stars: "x107" } },
+            { name: "Water Shard", baseOdds: "1.5QdVt", type: "Normal", maxStats: { gems: "x16", oreStats: "x3", ice: "x250B", oof: "x8.5" } },
+            { name: "Earth Shard", baseOdds: "400QnVt", type: "Normal", maxStats: { coin: "x13", oof: "x13", oreStats: "x10", stars: "x73", sand: "x240B" } },
+            { name: "Fire Shard", baseOdds: "75SpVt", type: "Normal", maxStats: { gems: "x10", stars: "x93", oof: "x17.1", moon: "x12.5", chips: "x7" } },
+            { name: "Ice Shard", baseOdds: "12NoVt", type: "Normal", maxStats: { gems: "x15", oof: "x19", oreStats: "x4.75", stars: "x71", runeLuck: "x1.5", oreDamage: "x1.25" } },
+            { name: "Poison Shard", baseOdds: "125UTg", type: "Normal", maxStats: { gems: "x21", oreStats: "x2", stars: "x93.5", planets: "x10.19", oof: "x17.7" } },
+            { name: "Metal Shard", baseOdds: "1.5e104", type: "Normal", maxStats: { oreStats: "x5", coin: "x18.5", oof: "x18.5", stars: "x132", runeLuck: "x1.5" } },
+            { name: "Light Shard", baseOdds: "3.2e106", type: "Normal", maxStats: { oreDamage: "x2.5", oof: "x25", stars: "x121", coin: "x9", blackholes: "x9", oreStats: "x3", hackPoints: "x10" } },
+            { name: "Shadow Shard", baseOdds: "4.0e108", type: "Normal", maxStats: { oreStats: "x4", oof: "x31", stars: "x226", gems: "x2", coin: "x31", runeLuck: "x16", hackPoints: "x16" } },
+            { name: "Galactic Shard", baseOdds: "5QdVt", type: "Noobinial", maxStats: { gems: "x101", prism: "x1.05", oreDamage: "x1.5", oof: "x51", stars: "x2.5k", alienCash: "x201", planets: "x501", oreStats: "x2" } },
+            { name: "Elemental Shard", baseOdds: "100QdVt", type: "Noobinial", maxStats: { gems: "x189", tierLuck: "x4.75", knowledge: "x16", oreDamage: "x6", stars: "x150k", alienCash: "x151", planets: "x751", runeBulk: "x2" } },
+            { name: "Dragon Shard", baseOdds: "2QnVt", type: "Noobinial", maxStats: { gems: "x251", tierLuck: "x11", knowledge: "x26", oof: "x251", chips: "x26", alienCash: "x126", runeSpeed: "x1.5", runeBulk: "x1.75" } }
         ]
     },
     "Realm 3": {
@@ -354,7 +354,7 @@ const gameData = {
             { name: "Header", baseOdds: "100No", type: "Normal", maxStats: { goals: "x106", tierLuck: "x42.2", tierBulk: "x34.79", footballRuneLuck: "x4", footballRuneBulk: "x9" } },
             { name: "Finale", baseOdds: "1Sx", type: "Noobinial", maxStats: { goals: "x25", oof: "x21", cash: "x7", fire: "x17", footballRuneBulk: "x71" } },
             { name: "Victory", baseOdds: "100Sx", type: "Noobinial", maxStats: { goals: "x21", wheat: "x21", coin: "x7", bread: "x17", footballRuneBulk: "x16" } },
-            { name: "Iconic", baseOdds: "2.5Sp", type: "Noobinial", maxStats: { goals: "x36", oreDamage: "x2", gem: "x2", oreStats: "x3", prism: "x1.2", footballRuneBulk: "x5" } }
+            { name: "Iconic", baseOdds: "2.5Sp", type: "Noobinial", maxStats: { goals: "x36", oreDamage: "x2", gems: "x2", oreStats: "x3", prism: "x1.2", footballRuneBulk: "x5" } }
         ],
     }
 };
@@ -546,6 +546,7 @@ function calculate() {
             wheat: "Max Wheat",
             prismRuneSpeed: "Max Prism Rune Speed",
             planks: "Max Planks",
+            ice: "Max Ice",
             ash: "Max Ash",
             wood: "Max Wood",
             gems: "Max Gems",
@@ -561,7 +562,14 @@ function calculate() {
             prismRuneBulk: "Max Prism Rune Bulk",
             goals: "Max Goals",
             footballRuneLuck: "Max Football Rune Luck",
-            footballRuneBulk: "Max Football Rune Bulk"
+            footballRuneBulk: "Max Football Rune Bulk",
+            stars: "Max Stars",
+            moon: "Max Moon",
+            chips: "Max Chips",
+            planets: "Max Planets",
+            blackholes: "Max Blackholes",
+            alienCash: "Max Alien Cash",
+            knowledge: "Max Knowledge",
         };
 
         // Dynamically build stat rows for stats that exist in gameData
