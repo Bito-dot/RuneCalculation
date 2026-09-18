@@ -269,3 +269,16 @@ input[type="text"], input[type="number"] {
 .rune-card:hover {
     transform: translateY(-2px);
 }
+
+.rune-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.rune-title .rune-level {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #aaa;
+  margin-left: 4px;
+}
