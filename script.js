@@ -340,6 +340,19 @@ const gameData = {
             { name: "Tidal Wave", baseOdds: "10OcVt", type: "Noobinial" },
             { name: "Tsunami", baseOdds: "10NoVt", type: "Noobinial" }
         ],
+        "Atlantis": [
+            { name: "Underwater", baseOdds: 1.01, type: "Normal" },
+            { name: "Ancient City", baseOdds: "10Qd", type: "Normal" },
+            { name: "Mermaid", baseOdds: "10Sx", type: "Normal" },
+            { name: "Sea Monument", baseOdds: "1No", type: "Normal" },
+            { name: "Fish", baseOdds: "10DDe", type: "Normal" },
+            { name: "Coral", baseOdds: "10SxDe", type: "Normal" },
+            { name: "Sea shell", baseOdds: "100NoDe", type: "Normal" },
+            { name: "Pearl", baseOdds: "1TVt", type: "Normal" },
+            { name: "Natural Disaster", baseOdds: "10SxVt", type: "Normal" },
+            { name: "Secret of Atlantis", baseOdds: "1NoVt", type: "Noobinial" },
+            { name: "Poseidon", baseOdds: "333NoVt", type: "Noobinial" }
+        ],
     },
     "Events": {
         "Football": [
