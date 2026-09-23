@@ -357,13 +357,13 @@ const gameData = {
         ],
         "Aquatic Prism": [
             { name: "Water Molecule", maxLevel: "N/A", baseOdds: 1.01, type: "Prism" },
-            { name: "Aqua", maxLevel: "N/A", baseOdds: "350Sx", type: "Prism" },
-            { name: "Atlantic", maxLevel: "N/A", baseOdds: "4.5Sp", type: "Prism" },
-            { name: "Take a shower", maxLevel: "N/A", baseOdds: "60Sp", type: "Prism" },
-            { name: "Low Tide", maxLevel: "N/A", baseOdds: "776Sp", type: "Prism" },
-            { name: "Underwater Crystal", maxLevel: "N/A", baseOdds: "10Oc", type: "Prism" },
-            { name: "Oceanic Wonder", maxLevel: "N/A", baseOdds: "135Oc", type: "Prism" },
-            { name: "Submerged", maxLevel: "N/A", baseOdds: "2No", type: "Prism" }
+            { name: "Aqua", maxLevel: "N/A", baseOdds: "350Oc", type: "Prism" },
+            { name: "Atlantic", maxLevel: "N/A", baseOdds: "4.5No", type: "Prism" },
+            { name: "Take a shower", maxLevel: "N/A", baseOdds: "60No", type: "Prism" },
+            { name: "Low Tide", maxLevel: "N/A", baseOdds: "776No", type: "Prism" },
+            { name: "Underwater Crystal", maxLevel: "N/A", baseOdds: "10De", type: "Prism" },
+            { name: "Oceanic Wonder", maxLevel: "N/A", baseOdds: "135De", type: "Prism" },
+            { name: "Submerged", maxLevel: "N/A", baseOdds: "2UDe", type: "Prism" }
         ],
     },
     "Events": {
