@@ -1,5 +1,15 @@
 // Extended Suffix Parser & Formatter (up to Quadragintillions)
 const SUFFIXES = [
+    { suffix: "NoQg", value: 1e180 },
+    { suffix: "OcQg", value: 1e177 },
+    { suffix: "SpQg", value: 1e174 },
+    { suffix: "SxQg", value: 1e171 },
+    { suffix: "QnQg", value: 1e168 },
+    { suffix: "QdQg", value: 1e165 },
+    { suffix: "TQg", value: 1e162 },
+    { suffix: "DQg", value: 1e159 },
+    { suffix: "UQg", value: 1e156 },
+    { suffix: "Qg", value: 1e153 },
     { suffix: "Noqg", value: 1e150 },
     { suffix: "Ocqg", value: 1e147 },
     { suffix: "Spqg", value: 1e144 },
@@ -271,6 +281,15 @@ const gameData = {
             { name: "Celestia", maxLevel: 750, baseOdds: "1.5Qn", type: "Prism", maxStats: { prismRuneBulk: "x5", coin: "x376", sand: "x1.5", tierLuck: "x38.5", souls: "x51", footballRuneBulk: "x1.5", oof: "x38.5" } },
             { name: "Eternis", maxLevel: 45, baseOdds: "75T", type: "Noobinial Prism", maxStats: { prismRuneSpeed: "x5", prismRuneBulk: "+3k", oof: "x46", prism: "x1.1", runeBulk: "x2.5", sand: "x2.5", souls: "x91", footballRuneBulk: "x3.5" } },
             { name: "Omnira", maxLevel: 35, baseOdds: "1.25Qd", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x4", prismRuneLuck: "x18.5", prism: "x1.25", oof: "x71", sand: "x4.5", souls: "x176", runeBulk: "x1.25", tierLuck: "x71" } }
+        ],
+        "Mini Noobinial": [
+            { name: "Mini Noob", maxLevel: "N/A", baseOdds: 1.01, type: "Noobinial" },
+            { name: "Noob", maxLevel: "N/A", baseOdds: "20M", type: "Noobinial" },
+            { name: "Big Noob", maxLevel: "N/A", baseOdds: "250Sp", type: "Noobinial" },
+            { name: "Huge Noob", maxLevel: "N/A", baseOdds: "3.5Sx", type: "Noobinial" },
+            { name: "Giant Noob", maxLevel: "N/A", baseOdds: "750QdVt", type: "Noobinial" },
+            { name: "Colossal Noob", maxLevel: "N/A", baseOdds: "12.5Tg", type: "Noobinial" },
+            { name: "Biggest Noob of all time", maxLevel: "N/A", baseOdds: "85Tg", type: "Noobinial" },
         ]
     },
     "Realm 4": {
@@ -365,6 +384,15 @@ const gameData = {
             { name: "Oceanic Wonder", maxLevel: "N/A", baseOdds: "135De", type: "Prism" },
             { name: "Submerged", maxLevel: "N/A", baseOdds: "2UDe", type: "Prism" }
         ],
+        "Mini Non Noobinial": [
+            { name: "Pro", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Very Pro", maxLevel: "N/A", baseOdds: "1NoDe", type: "Normal" },
+            { name: "Insanely Pro", maxLevel: "N/A", baseOdds: "1NoVt", type: "Normal" },
+            { name: "Dedicated Pro", maxLevel: "N/A", baseOdds: "1.0e120", type: "Normal" },
+            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "1.0e150", type: "Normal" },
+            { name: "One of the Best", maxLevel: "N/A", baseOdds: "7.5e156", type: "Normal" },
+            { name: "The Best", maxLevel: "N/A", baseOdds: "2.0e158", type: "Normal" }
+        ]
     },
     "Events": {
         "Football": [
