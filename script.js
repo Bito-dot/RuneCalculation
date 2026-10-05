@@ -393,9 +393,9 @@ const gameData = {
             { name: "Very Pro", maxLevel: "N/A", baseOdds: "1NoDe", type: "Normal" },
             { name: "Insanely Pro", maxLevel: "N/A", baseOdds: "1NoVt", type: "Normal" },
             { name: "Dedicated Pro", maxLevel: "N/A", baseOdds: "1.0e120", type: "Normal" },
-            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "1.0e150", type: "Normal" },
-            { name: "One of the Best", maxLevel: "N/A", baseOdds: "7.5e156", type: "Normal" },
-            { name: "The Best", maxLevel: "N/A", baseOdds: "2.0e158", type: "Normal" }
+            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "3.5e149", type: "Normal" },
+            { name: "One of the Best", maxLevel: "N/A", baseOdds: "2.0e156", type: "Normal" },
+            { name: "The Best", maxLevel: "N/A", baseOdds: "5.0e157", type: "Normal" }
         ]
     },
     "Events": {
