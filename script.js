@@ -186,8 +186,8 @@ const gameData = {
             { name: "Unstoppable Virus", maxLevel: 40, baseOdds: "1DVt", type: "Noobinial", maxStats: { oof: "x21", hackPoints: "x51", souls: "x81", tierLuck: "x11", prism: "x1.3", runeBulk: "x1.25", prismRuneBulk: "x1.75", prismRuneLuck: "x21" } }
         ],
         "Cosmic Prism": [
-            { name: "Lucent", maxLevel: "1k+", baseOdds: 2.5, type: "Prism", maxStats: { oof: "x57.3k", cash: "x57.3k", bread: "x1.14k" } },
-            { name: "Chroma", maxLevel: "3k+", baseOdds: 4, type: "Prism", maxStats: { oof: "x370k", tierBulk: "x16", runeBulk: "x11" } },
+            { name: "Lucent", maxLevel: 5000, baseOdds: 2.5, type: "Prism", maxStats: { oof: "x57.3k", cash: "x57.3k", bread: "x1.14k" } },
+            { name: "Chroma", maxLevel: 4500, baseOdds: 4, type: "Prism", maxStats: { oof: "x370k", tierBulk: "x16", runeBulk: "x11" } },
             { name: "Fractal", maxLevel: 135, baseOdds: 20, type: "Prism", maxStats: { prismRuneBulk: "+100", blaze: "x101", wheat: "x16" } },
             { name: "Refraction", maxLevel: 3500, baseOdds: 100, type: "Prism", maxStats: { prismRuneSpeed: "x3", fire: "x101", oof: "x1.4M", tierLuck: "x11", runeBulk: "x11" } },
             { name: "Tessellation", maxLevel: 3000, baseOdds: 200, type: "Prism", maxStats: { prismRuneBulk: "+220", oof: "x1.8M", blaze: "x101", bread: "x6k", runeBulk: "x11" } },
@@ -196,6 +196,20 @@ const gameData = {
             { name: "Voidglass", maxLevel: 75, baseOdds: "1M", type: "Prism", maxStats: { prismRuneSpeed: "x2.33", prismRuneBulk: "+375", cash: "x1.88k", oof: "x750k", tierBulk: "x21" } },
             { name: "Godshard", maxLevel: 25, baseOdds: "100M", type: "Noobinial Prism", maxStats: { prismRuneSpeed: "x19", prismRuneBulk: "+1.25k", oof: "x2.5M", bread: "x51", coin: "x13.5" } },
             { name: "Ultimate Shard", maxLevel: 25, baseOdds: "250B", type: "Noobinial Prism", maxStats: { prism: "x1.5", cash: "x1.25k", oof: "x25M", bread: "x51", coin: "x13.5", runeBulk: "x2.25", tierLuck: "x51" } }
+        ],
+        "Awakend": [
+            { name: "Potential", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Limitless", maxLevel: "N/A", baseOdds: "QdVt", type: "Normal" },
+            { name: "Incomparable", maxLevel: "N/A", baseOdds: "SpVt", type: "Normal" },
+            { name: "Unfathomable", maxLevel: "N/A", baseOdds: "1000NoVt", type: "Normal" },
+            { name: "Unmatched", maxLevel: "N/A", baseOdds: "1.0e102", type: "Normal" },
+            { name: "Unbelievable", maxLevel: "N/A", baseOdds: "1.0e111", type: "Normal" },
+            { name: "Untouchable", maxLevel: "N/A", baseOdds: "1.0e120", type: "Normal" },
+            { name: "Unstoppable", maxLevel: "N/A", baseOdds: "1.0e129", type: "Normal" },
+            { name: "Unrivaled", maxLevel: "N/A", baseOdds: "1.0e138", type: "Normal" },
+            { name: "Unconquerable", maxLevel: "N/A", baseOdds: "1.0e147", type: "Normal" },
+            { name: "Unforgettable", maxLevel: "N/A", baseOdds: "1.0e156", type: "Normal" },
+            { name: "Otherworldly", maxLevel: "N/A", baseOdds: "25UTg", type: "Noobinial" }
         ]
     },
     "Realm 2": {
@@ -327,10 +341,10 @@ const gameData = {
             { name: "Elemental Of Light", baseOdds: "1SpVt", type: "Normal" },
             { name: "Protected", baseOdds: "1UTg", type: "Normal" },
             { name: "Creation", baseOdds: "1.0e108", type: "Normal" },
-            { name: "Angelic Goodness", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: {oof: "x26", yang: "x50", tierLuck: "x26", stars: "x25M", blackholes: "x251", planets: "x6.25k", runeLuck: "x1.5" } },
-            { name: "Absolute Divinity", maxLevel: 100, baseOdds: "100SxVt", type: "Noobinial", maxStats: {oof: "x201", yang: "x100", alienCash: "x1k", coin: "x1k", tierLuck: "x36", stars: "x100B", runeBulk: "x1.25", runeLuck: "x7.5" } },
-            { name: "Light Genesis", maxLevel: 100, baseOdds: "750SxVt", type: "Noobinial", maxStats: {chips: "x1.5", oof: "x301", yang: "x125", prism: "x1.2", tierLuck: "x51", coin: "x1.5k", runeBulk: "x1.5", runeLuck: "x3.75" } },
-            { name: "Ultimate Light", baseOdds: "2OcVt", type: "Noobinial" }
+            { name: "Angelic Goodness", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: { oof: "x26", yang: "x50", tierLuck: "x26", stars: "x25M", blackholes: "x251", planets: "x6.25k", runeLuck: "x1.5" } },
+            { name: "Absolute Divinity", maxLevel: 100, baseOdds: "100SxVt", type: "Noobinial", maxStats: { oof: "x201", yang: "x100", alienCash: "x1k", coin: "x1k", tierLuck: "x36", stars: "x100B", runeBulk: "x1.25", runeLuck: "x7.5" } },
+            { name: "Light Genesis", maxLevel: 100, baseOdds: "750SxVt", type: "Noobinial", maxStats: { chips: "x1.5", oof: "x301", yang: "x125", prism: "x1.2", tierLuck: "x51", coin: "x1.5k", runeBulk: "x1.5", runeLuck: "x3.75" } },
+            { name: "Ultimate Light", baseOdds: "2OcVt", type: "Noobinial", maxStats: { oof: "x51", yang: "x251", coin: "x1.25k", prism: "x1.1", tierLuck: "x63.5", tierBulk: "x13.5", runeBulk: "x1.2", runeLuck: "x5" } }
         ],
         "Dark": [
             { name: "Black", baseOdds: 1.01, type: "Normal" },
@@ -340,9 +354,9 @@ const gameData = {
             { name: "Doomed", baseOdds: "1UTg", type: "Normal" },
             { name: "Destruction", baseOdds: "1.0e108", type: "Normal" },
             { name: "Demonic Evil", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: {stars: "x25M", blackholes: "x251", oof: "x51", yin: "x100", planets: "x751", coin: "x126", runeBulk: "x1.1", tierLuck: "x51" } },
-            { name: "Absolute Darkness", maxLevel: 100, baseOdds: "2.5SpVt", type: "Noobinial", maxStats: {oof: "x1k", yin: "x100", chips: "x7.5", knowledge: "x1k", tierLuck: "x101", tierBulk: "x26", runeBulk: "x2", runeLuck: "x7.5" } },
-            { name: "Dark Genesis", maxLevel: 75, baseOdds: "50SpVt", type: "Noobinial", maxStats: {oof: "x1.88k", yin: "x100", chips: "x2", prism: "x1.2", tierLuck: "x57.3", tierBulk: "x12.2", runeBulk: "x2.5", runeLuck: "x10" } },
-            { name: "Ultimate Darkness", baseOdds: "25OcVt", type: "Noobinial" }
+            { name: "Absolute Darkness", maxLevel: 100, baseOdds: "2.5SpVt", type: "Noobinial", maxStats: { oof: "x1k", yin: "x100", chips: "x7.5", knowledge: "x1k", tierLuck: "x101", tierBulk: "x26", runeBulk: "x2", runeLuck: "x7.5" } },
+            { name: "Dark Genesis", maxLevel: 75, baseOdds: "50SpVt", type: "Noobinial", maxStats: { oof: "x1.88k", yin: "x100", chips: "x2", prism: "x1.2", tierLuck: "x57.3", tierBulk: "x12.2", runeBulk: "x2.5", runeLuck: "x10" } },
+            { name: "Ultimate Darkness", baseOdds: "25OcVt", type: "Noobinial", maxStats: { oof: "x201", yin: "x201", coin: "x10k", prism: "x1.14", tierLuck: "x201", tierBulk: "x21", runeBulk: "x1.4", runeLuck: "x10" } }
         ]
     },
     "Realm 5": {
@@ -356,8 +370,8 @@ const gameData = {
             { name: "Sea", maxLevel: 250, baseOdds: "10SxDe", type: "Normal", maxStats: { bubbles:"x26" } },
             { name: "Ocean", maxLevel: 250, baseOdds: "100NoDe", type: "Normal", maxStats: { bubbles: "x101" } },
             { name: "Deep Sea", maxLevel: 250, baseOdds: "10UVt", type: "Normal", maxStats: { bubbles: "x251" } },
-            { name: "Tidal Wave", maxLevel: "N/A", baseOdds: "10OcVt", type: "Noobinial", maxStats: { oof: "x881", bubbles: "x441", air: "x177", coral: "x177", yin: "x441", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
-            { name: "Tsunami", maxLevel: "N/A", baseOdds: "10NoVt", type: "Noobinial" },
+            { name: "Tidal Wave", maxLevel: 250, baseOdds: "10OcVt", type: "Noobinial", maxStats: { oof: "x2.5k", bubbles: "x1.25k", air: "x501", coral: "x501", yin: "x1k", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
+            { name: "Tsunami", maxLevel: 500, baseOdds: "10NoVt", type: "Noobinial", maxStats: { oof: "x12.5k", bubbles: "x7.5k", air: "x2.5k", coral: "x2.5k", yin: "x5k", yang: "x5k", runeBulk: "x5", prism: "x1.04" } },
             { name: "Infinite Flood", maxLevel: "N/A", baseOdds: "1000NoVt", type: "Noobinial" }
         ],
         "Atlantis": [
@@ -370,12 +384,12 @@ const gameData = {
             { name: "Sea shell", maxLevel: 250, baseOdds: "100NoDe", type: "Normal", maxStats: { oof: "x1k", oil: "x250" } },
             { name: "Pearl", maxLevel: 250, baseOdds: "1TVt", type: "Normal", maxStats: { bubbles: "x2.5k", trashCash: "x501" } },
             { name: "Natural Disaster", maxLevel: 250, baseOdds: "10SxVt", type: "Normal", maxStats: { oof: "x2.5k", seaPoints: "x1.25k", hackPoints: "x1.25T" } },
-            { name: "Secret of Atlantis", maxLevel: "N/A", baseOdds: "1NoVt", type: "Noobinial" },
-            { name: "Poseidon", maxLevel: "N/A", baseOdds: "333NoVt", type: "Noobinial" },
-            { name: "Lord of Atlantis", maxLevel: "N/A", baseOdds: "7.77Tg", type: "Noobinial" }
+            { name: "Secret of Atlantis", maxLevel: 100, baseOdds: "1NoVt", type: "Noobinial", maxStats: { oof: "5k", bubbles: "x10k", pearl: "x1.5k", oil: "x2k", seaPoints: "x2k", runeLuck: "x15", runeBulk: "x5", prism: "x1.06" } },
+            { name: "Poseidon", maxLevel: 500, baseOdds: "333NoVt", type: "Noobinial", maxStats: { oof: "x50k", bubbles: "x100k", oil: "x20k", trashCash: "x901", seaPoints: "x1.5k", runeLuck: "x20", runeBulk: "x3", prism: "x1.08" } },
+            { name: "Lord of Atlantis", maxLevel: "N/A", baseOdds: "7.77Tg", type: "Noobinial", maxStats: { oof: "x401", tierLuck: "x41", tierBulk: "x3", coin: "x101", seaPoints: "x21", prismRuneBulk: "x3", runeBulk: "x1.5", prism: "x1.35" } }
         ],
         "Aquatic Prism": [
-            { name: "Water Molecule", maxLevel: "N/A", baseOdds: 1.01, type: "Prism" },
+            { name: "Water Molecule", maxLevel: 75, baseOdds: 1.01, type: "Prism", maxStats: { oof: "x4.75", hackPoints: "x76", bubbles: "x26" } },
             { name: "Aqua", maxLevel: 25000, baseOdds: "350Oc", type: "Prism", maxStats: { prismRuneLuck: "x3", prismRuneBulk: "+7.5k", coin: "x26", bubbles: "x100", air: "x71", oof: "x1k" } },
             { name: "Atlantic", maxLevel: 20000, baseOdds: "4.5No", type: "Prism", maxStats: { prismRuneBulk: "x3", coral: "x141", pearl: "x86", oof: "x601" } },
             { name: "Take a shower", maxLevel: 15000, baseOdds: "60No", type: "Prism", maxStats: { prismRuneBulk: "+15k", prismRuneLuck: "x6", coin: "x51", oil: "x129", trashCash: "x131", oof: "x1.5k" } },
