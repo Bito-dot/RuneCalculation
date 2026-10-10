@@ -199,8 +199,8 @@ const gameData = {
         ],
         "Awakend": [
             { name: "Potential", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Limitless", maxLevel: "N/A", baseOdds: "QdVt", type: "Normal" },
-            { name: "Incomparable", maxLevel: "N/A", baseOdds: "SpVt", type: "Normal" },
+            { name: "Limitless", maxLevel: "N/A", baseOdds: "1QdVt", type: "Normal" },
+            { name: "Incomparable", maxLevel: "N/A", baseOdds: "1SpVt", type: "Normal" },
             { name: "Unfathomable", maxLevel: "N/A", baseOdds: "1000NoVt", type: "Normal" },
             { name: "Unmatched", maxLevel: "N/A", baseOdds: "1.0e102", type: "Normal" },
             { name: "Unbelievable", maxLevel: "N/A", baseOdds: "1.0e111", type: "Normal" },
