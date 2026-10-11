@@ -370,9 +370,9 @@ const gameData = {
             { name: "Sea", maxLevel: 250, baseOdds: "10SxDe", type: "Normal", maxStats: { bubbles:"x26" } },
             { name: "Ocean", maxLevel: 250, baseOdds: "100NoDe", type: "Normal", maxStats: { bubbles: "x101" } },
             { name: "Deep Sea", maxLevel: 250, baseOdds: "10UVt", type: "Normal", maxStats: { bubbles: "x251" } },
-            { name: "Tidal Wave", maxLevel: 250, baseOdds: "10OcVt", type: "Noobinial", maxStats: { oof: "x2.5k", bubbles: "x1.25k", air: "x501", coral: "x501", yin: "x1k", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
-            { name: "Tsunami", maxLevel: 500, baseOdds: "10NoVt", type: "Noobinial", maxStats: { oof: "x12.5k", bubbles: "x7.5k", air: "x2.5k", coral: "x2.5k", yin: "x5k", yang: "x5k", runeBulk: "x5", prism: "x1.04" } },
-            { name: "Infinite Flood", maxLevel: "N/A", baseOdds: "1000NoVt", type: "Noobinial" }
+            { name: "Tidal Wave", maxLevel: 250, baseOdds: "3.5OcVt", type: "Noobinial", maxStats: { oof: "x2.5k", bubbles: "x1.25k", air: "x501", coral: "x501", yin: "x1k", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
+            { name: "Tsunami", maxLevel: 500, baseOdds: "3.5NoVt", type: "Noobinial", maxStats: { oof: "x12.5k", bubbles: "x7.5k", air: "x2.5k", coral: "x2.5k", yin: "x5k", yang: "x5k", runeBulk: "x5", prism: "x1.04" } },
+            { name: "Infinite Flood", maxLevel: "N/A", baseOdds: "200NoVt", type: "Noobinial" }
         ],
         "Atlantis": [
             { name: "Underwater", maxLevel: 250, baseOdds: 1.01, type: "Normal", maxStats: { bubbles: "x51" } },
