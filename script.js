@@ -372,7 +372,7 @@ const gameData = {
             { name: "Deep Sea", maxLevel: 250, baseOdds: "10UVt", type: "Normal", maxStats: { bubbles: "x251" } },
             { name: "Tidal Wave", maxLevel: 250, baseOdds: "3.5OcVt", type: "Noobinial", maxStats: { oof: "x2.5k", bubbles: "x1.25k", air: "x501", coral: "x501", yin: "x1k", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
             { name: "Tsunami", maxLevel: 500, baseOdds: "3.5NoVt", type: "Noobinial", maxStats: { oof: "x12.5k", bubbles: "x7.5k", air: "x2.5k", coral: "x2.5k", yin: "x5k", yang: "x5k", runeBulk: "x5", prism: "x1.04" } },
-            { name: "Infinite Flood", maxLevel: "N/A", baseOdds: "200NoVt", type: "Noobinial" }
+            { name: "Infinite Flood", maxLevel: 450, baseOdds: "200NoVt", type: "Noobinial", maxStats: { oof: "x11.3k", coin: "x901", bubbles: "x901", coral: "x1.35k", tierLuck: "x451", tierBulk: "x3.5", runeBulk: "x1.35", prism: "x1.25" } }
         ],
         "Atlantis": [
             { name: "Underwater", maxLevel: 250, baseOdds: 1.01, type: "Normal", maxStats: { bubbles: "x51" } },
@@ -386,7 +386,7 @@ const gameData = {
             { name: "Natural Disaster", maxLevel: 250, baseOdds: "10SxVt", type: "Normal", maxStats: { oof: "x2.5k", seaPoints: "x1.25k", hackPoints: "x1.25T" } },
             { name: "Secret of Atlantis", maxLevel: 100, baseOdds: "250OcVt", type: "Noobinial", maxStats: { oof: "5k", bubbles: "x10k", pearl: "x1.5k", oil: "x2k", seaPoints: "x2k", runeLuck: "x15", runeBulk: "x5", prism: "x1.06" } },
             { name: "Poseidon", maxLevel: 500, baseOdds: "88NoVt", type: "Noobinial", maxStats: { oof: "x50k", bubbles: "x100k", oil: "x20k", trashCash: "x901", seaPoints: "x1.5k", runeLuck: "x20", runeBulk: "x3", prism: "x1.08" } },
-            { name: "Lord of Atlantis", maxLevel: "N/A", baseOdds: "1.11Tg", type: "Noobinial", maxStats: { oof: "x401", tierLuck: "x41", tierBulk: "x3", coin: "x101", seaPoints: "x21", prismRuneBulk: "x3", runeBulk: "x1.5", prism: "x1.35" } }
+            { name: "Lord of Atlantis", maxLevel: 375, baseOdds: "1.11Tg", type: "Noobinial", maxStats: { oof: "x7.5k", tierLuck: "x751", tierBulk: "x6", coin: "x1.88k", seaPoints: "x376", prismRuneBulk: "x3", runeBulk: "x1.5", prism: "x1.35" } }
         ],
         "Aquatic Prism": [
             { name: "Water Molecule", maxLevel: 75, baseOdds: 1.01, type: "Prism", maxStats: { oof: "x4.75", hackPoints: "x76", bubbles: "x26" } },
@@ -398,9 +398,9 @@ const gameData = {
             { name: "Oceanic Wonder", maxLevel: 5000, baseOdds: "67.5De", type: "Prism", maxStats: { prismRuneLuck: "x8.5", prismRuneBulk: "+30k", bubbles: "x2.25k", seaPoints: "x61", trashCash: "x351", coral: "x1k", coin: "x151", prism: "x1.1" } },
             { name: "Submerged", maxLevel: 3500, baseOdds: "1UDe", type: "Prism", maxStats: { prismRuneBulk: "x5", seaPoints: "x4", coral: "x151", tierLuck: "x176", oil: "x101", prism: "x1.2", pearl: "x126", oof: "x1.75k" } },
             { name: "Water Elemental", maxLevel: "N/A", baseOdds: "2.5TDe", type: "Prism", maxStats: { prismRuneBulk: "x1.2", seaPoints: "x3.5", coral: "x5", tierLuck: "x4.5", pearl: "x51", bubbles: "x51", oof: "x71" } },
-            { name: "Whirlpool", maxLevel: "N/A", baseOdds: "2.5Sx", type: "Noobinial Prism" },
-            { name: "Prismatic Water", maxLevel: "N/A", baseOdds: "15Sx", type: "Noobinial Prism" },
-            { name: "Prismatic Ocean", maxLevel: "N/A", baseOdds: "55Sx", type: "Noobinial Prism" }
+            { name: "Whirlpool", maxLevel: 200, baseOdds: "2.5Sx", type: "Noobinial Prism", maxStats: { prismRuneSpeed: "x5", prismRuneBulk: "+75k", oof: "x601", prism: "x1.35", runeBulk: "x2.5", tierLuck: "x151", coin: "x201", coral: "x21" } },
+            { name: "Prismatic Water", maxLevel: 175, baseOdds: "15Sx", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x4", prismRuneLuck: "x351", prism: "x1.5", oof: "x876", seaPoints: "x201", coin: "x876", runeBulk: "x1.5", tierLuck: "x264" } },
+            { name: "Prismatic Ocean", maxLevel: 150, baseOdds: "55Sx", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x2", prismRuneLuck: "x2", prism: "x1.1", oof: "x1.5k", seaPoints: "x201", coin: "x151", runeBulk: "x1.2", tierLuck: "x76" } }
         ],
         "Mini Non Noobinial": [
             { name: "Pro", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
