@@ -209,7 +209,7 @@ const gameData = {
             { name: "Unrivaled", maxLevel: "N/A", baseOdds: "1.0e138", type: "Normal" },
             { name: "Unconquerable", maxLevel: "N/A", baseOdds: "1.0e147", type: "Normal" },
             { name: "Unforgettable", maxLevel: "N/A", baseOdds: "1.0e156", type: "Normal" },
-            { name: "Otherworldly", maxLevel: "N/A", baseOdds: "25UTg", type: "Noobinial" }
+            { name: "Otherworldly", maxLevel: "N/A", baseOdds: "1.5UTg", type: "Noobinial" }
         ]
     },
     "Realm 2": {
@@ -298,12 +298,12 @@ const gameData = {
         ],
         "Mini Noobinial": [
             { name: "Mini Noob", maxLevel: "N/A", baseOdds: 1.01, type: "Noobinial" },
-            { name: "Noob", maxLevel: "N/A", baseOdds: "20M", type: "Noobinial" },
-            { name: "Big Noob", maxLevel: "N/A", baseOdds: "250Sp", type: "Noobinial" },
-            { name: "Huge Noob", maxLevel: "N/A", baseOdds: "3.5Sx", type: "Noobinial" },
-            { name: "Giant Noob", maxLevel: "N/A", baseOdds: "750QdVt", type: "Noobinial" },
-            { name: "Colossal Noob", maxLevel: "N/A", baseOdds: "12.5Tg", type: "Noobinial" },
-            { name: "Biggest Noob of all time", maxLevel: "N/A", baseOdds: "85Tg", type: "Noobinial" },
+            { name: "Noob", maxLevel: "N/A", baseOdds: "8M", type: "Noobinial" },
+            { name: "Big Noob", maxLevel: "N/A", baseOdds: "100Sp", type: "Noobinial" },
+            { name: "Huge Noob", maxLevel: "N/A", baseOdds: "1.5SxDe", type: "Noobinial" },
+            { name: "Giant Noob", maxLevel: "N/A", baseOdds: "300QdVt", type: "Noobinial" },
+            { name: "Colossal Noob", maxLevel: "N/A", baseOdds: "1.5Tg", type: "Noobinial" },
+            { name: "Biggest Noob of all time", maxLevel: "N/A", baseOdds: "10Tg", type: "Noobinial" },
         ]
     },
     "Realm 4": {
@@ -384,32 +384,32 @@ const gameData = {
             { name: "Sea shell", maxLevel: 250, baseOdds: "100NoDe", type: "Normal", maxStats: { oof: "x1k", oil: "x250" } },
             { name: "Pearl", maxLevel: 250, baseOdds: "1TVt", type: "Normal", maxStats: { bubbles: "x2.5k", trashCash: "x501" } },
             { name: "Natural Disaster", maxLevel: 250, baseOdds: "10SxVt", type: "Normal", maxStats: { oof: "x2.5k", seaPoints: "x1.25k", hackPoints: "x1.25T" } },
-            { name: "Secret of Atlantis", maxLevel: 100, baseOdds: "1NoVt", type: "Noobinial", maxStats: { oof: "5k", bubbles: "x10k", pearl: "x1.5k", oil: "x2k", seaPoints: "x2k", runeLuck: "x15", runeBulk: "x5", prism: "x1.06" } },
-            { name: "Poseidon", maxLevel: 500, baseOdds: "333NoVt", type: "Noobinial", maxStats: { oof: "x50k", bubbles: "x100k", oil: "x20k", trashCash: "x901", seaPoints: "x1.5k", runeLuck: "x20", runeBulk: "x3", prism: "x1.08" } },
-            { name: "Lord of Atlantis", maxLevel: "N/A", baseOdds: "7.77Tg", type: "Noobinial", maxStats: { oof: "x401", tierLuck: "x41", tierBulk: "x3", coin: "x101", seaPoints: "x21", prismRuneBulk: "x3", runeBulk: "x1.5", prism: "x1.35" } }
+            { name: "Secret of Atlantis", maxLevel: 100, baseOdds: "250OcVt", type: "Noobinial", maxStats: { oof: "5k", bubbles: "x10k", pearl: "x1.5k", oil: "x2k", seaPoints: "x2k", runeLuck: "x15", runeBulk: "x5", prism: "x1.06" } },
+            { name: "Poseidon", maxLevel: 500, baseOdds: "88NoVt", type: "Noobinial", maxStats: { oof: "x50k", bubbles: "x100k", oil: "x20k", trashCash: "x901", seaPoints: "x1.5k", runeLuck: "x20", runeBulk: "x3", prism: "x1.08" } },
+            { name: "Lord of Atlantis", maxLevel: "N/A", baseOdds: "1.11Tg", type: "Noobinial", maxStats: { oof: "x401", tierLuck: "x41", tierBulk: "x3", coin: "x101", seaPoints: "x21", prismRuneBulk: "x3", runeBulk: "x1.5", prism: "x1.35" } }
         ],
         "Aquatic Prism": [
             { name: "Water Molecule", maxLevel: 75, baseOdds: 1.01, type: "Prism", maxStats: { oof: "x4.75", hackPoints: "x76", bubbles: "x26" } },
             { name: "Aqua", maxLevel: 25000, baseOdds: "350Oc", type: "Prism", maxStats: { prismRuneLuck: "x3", prismRuneBulk: "+7.5k", coin: "x26", bubbles: "x100", air: "x71", oof: "x1k" } },
-            { name: "Atlantic", maxLevel: 20000, baseOdds: "4.5No", type: "Prism", maxStats: { prismRuneBulk: "x3", coral: "x141", pearl: "x86", oof: "x601" } },
-            { name: "Take a shower", maxLevel: 15000, baseOdds: "60No", type: "Prism", maxStats: { prismRuneBulk: "+15k", prismRuneLuck: "x6", coin: "x51", oil: "x129", trashCash: "x131", oof: "x1.5k" } },
-            { name: "Low Tide", maxLevel: 10000, baseOdds: "776No", type: "Prism", maxStats: { prismRuneLuck: "x7", bubbles: "x751", yang: "x5M", yin: "x500k", coral: "x1k", seaPoints: "x101", oof: "x201" } },
-            { name: "Underwater Crystal", maxLevel: 7500, baseOdds: "10De", type: "Prism", maxStats: { prismRuneLuck: "x3", chips: "x26", air: "x151", oil: "x251", pearl: "x226", oof: "x1.5k", prismRuneBulk: "+20k" } },
-            { name: "Oceanic Wonder", maxLevel: 5000, baseOdds: "135De", type: "Prism", maxStats: { prismRuneLuck: "x8.5", prismRuneBulk: "+30k", bubbles: "x2.25k", seaPoints: "x61", trashCash: "x351", coral: "x1k", coin: "x151", prism: "x1.1" } },
-            { name: "Submerged", maxLevel: 3500, baseOdds: "2UDe", type: "Prism", maxStats: { prismRuneBulk: "x5", seaPoints: "x4", coral: "x151", tierLuck: "x176", oil: "x101", prism: "x1.2", pearl: "x126", oof: "x1.75k" } },
-            { name: "Water Elemental", maxLevel: "N/A", baseOdds: "5TDe", type: "Prism", maxStats: { prismRuneBulk: "x1.2", seaPoints: "x3.5", coral: "x5", tierLuck: "x4.5", pearl: "x51", bubbles: "x51", oof: "x71" } },
-            { name: "Whirlpool", maxLevel: "N/A", baseOdds: "6.5Sx", type: "Noobinial Prism" },
-            { name: "Prismatic Water", maxLevel: "N/A", baseOdds: "75Sx", type: "Noobinial Prism" },
-            { name: "Prismatic Ocean", maxLevel: "N/A", baseOdds: "350Sx", type: "Noobinial Prism" }
+            { name: "Atlantic", maxLevel: 20000, baseOdds: "3.25No", type: "Prism", maxStats: { prismRuneBulk: "x3", coral: "x141", pearl: "x86", oof: "x601" } },
+            { name: "Take a shower", maxLevel: 15000, baseOdds: "35No", type: "Prism", maxStats: { prismRuneBulk: "+15k", prismRuneLuck: "x6", coin: "x51", oil: "x129", trashCash: "x131", oof: "x1.5k" } },
+            { name: "Low Tide", maxLevel: 10000, baseOdds: "444No", type: "Prism", maxStats: { prismRuneLuck: "x7", bubbles: "x751", yang: "x5M", yin: "x500k", coral: "x1k", seaPoints: "x101", oof: "x201" } },
+            { name: "Underwater Crystal", maxLevel: 7500, baseOdds: "5De", type: "Prism", maxStats: { prismRuneLuck: "x3", chips: "x26", air: "x151", oil: "x251", pearl: "x226", oof: "x1.5k", prismRuneBulk: "+20k" } },
+            { name: "Oceanic Wonder", maxLevel: 5000, baseOdds: "67.5De", type: "Prism", maxStats: { prismRuneLuck: "x8.5", prismRuneBulk: "+30k", bubbles: "x2.25k", seaPoints: "x61", trashCash: "x351", coral: "x1k", coin: "x151", prism: "x1.1" } },
+            { name: "Submerged", maxLevel: 3500, baseOdds: "1UDe", type: "Prism", maxStats: { prismRuneBulk: "x5", seaPoints: "x4", coral: "x151", tierLuck: "x176", oil: "x101", prism: "x1.2", pearl: "x126", oof: "x1.75k" } },
+            { name: "Water Elemental", maxLevel: "N/A", baseOdds: "2.5TDe", type: "Prism", maxStats: { prismRuneBulk: "x1.2", seaPoints: "x3.5", coral: "x5", tierLuck: "x4.5", pearl: "x51", bubbles: "x51", oof: "x71" } },
+            { name: "Whirlpool", maxLevel: "N/A", baseOdds: "2.5Sx", type: "Noobinial Prism" },
+            { name: "Prismatic Water", maxLevel: "N/A", baseOdds: "15Sx", type: "Noobinial Prism" },
+            { name: "Prismatic Ocean", maxLevel: "N/A", baseOdds: "55Sx", type: "Noobinial Prism" }
         ],
         "Mini Non Noobinial": [
             { name: "Pro", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Very Pro", maxLevel: "N/A", baseOdds: "1NoDe", type: "Normal" },
-            { name: "Insanely Pro", maxLevel: "N/A", baseOdds: "1NoVt", type: "Normal" },
-            { name: "Dedicated Pro", maxLevel: "N/A", baseOdds: "1.0e120", type: "Normal" },
-            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "3.5e149", type: "Normal" },
-            { name: "One of the Best", maxLevel: "N/A", baseOdds: "2.0e156", type: "Normal" },
-            { name: "The Best", maxLevel: "N/A", baseOdds: "5.0e157", type: "Normal" }
+            { name: "Very Pro", maxLevel: "N/A", baseOdds: "500OcDe", type: "Normal" },
+            { name: "Insanely Pro", maxLevel: "N/A", baseOdds: "500OcVt", type: "Normal" },
+            { name: "Dedicated Pro", maxLevel: "N/A", baseOdds: "5.0e119", type: "Normal" },
+            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "1.5e149", type: "Normal" },
+            { name: "One of the Best", maxLevel: "N/A", baseOdds: "5.0e155", type: "Normal" },
+            { name: "The Best", maxLevel: "N/A", baseOdds: "1.2e157", type: "Normal" }
         ]
     },
     "Events": {
