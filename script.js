@@ -242,7 +242,7 @@ const gameData = {
             { name: "Deep Spirit", maxLevel: 30, baseOdds: "250De", type: "Noobinial", maxStats: { gems: "x61", prism: "x1.2", oreDamage: "x2", tierBulk: "x46", tierLuck: "x76" } }
         ],
         "Shard": [
-            { name: "Air Shard", maxLevel: "50+", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x3.12", gems: "x15", stars: "x107" } },
+            { name: "Air Shard", maxLevel: 75, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x4", gems: "x15", stars: "x151" } },
             { name: "Water Shard", maxLevel: 250, baseOdds: "1.5QdVt", type: "Normal", maxStats: { gems: "x16", oreStats: "x3", ice: "x250B", oof: "x8.5" } },
             { name: "Earth Shard", maxLevel: 240, baseOdds: "400QnVt", type: "Normal", maxStats: { coin: "x13", oof: "x13", oreStats: "x10", stars: "x73", sand: "x240B" } },
             { name: "Fire Shard", maxLevel: 230, baseOdds: "75SpVt", type: "Normal", maxStats: { gems: "x10", stars: "x93", oof: "x17.1", moon: "x12.5", chips: "x7" } },
@@ -285,7 +285,7 @@ const gameData = {
             { name: "Secret of Egypt", maxLevel: 60, baseOdds: "300Vt", type: "Noobinial", maxStats: { souls: "x1.5k", sand: "x10", runeBulk: "x2", runeSpeed: "x1.6", oof: "x601", tierLuck: "x13", tierBulk: "x7" } }
         ],
         "Sunstone Prism": [
-            { name: "Cinderfall", maxLevel: "33k+", baseOdds: 1.01, type: "Prism", maxStats: { oof: "x339", fire: "x1.69k" } },
+            { name: "Cinderfall", maxLevel: 35000, baseOdds: 1.01, type: "Prism", maxStats: { oof: "x351", fire: "x1.75k" } },
             { name: "Shadowflare", maxLevel: 25000, baseOdds: "1.5B", type: "Prism", maxStats: { prismRuneLuck: "x11", prismRuneBulk: "+1k", cash: "x1.25M", wood: "x2.5k" } },
             { name: "Dawnshard", maxLevel: 20000, baseOdds: "75B", type: "Prism", maxStats: { prismRuneBulk: "x5", wheat: "x5k", bread: "x400k" } },
             { name: "Lumina", maxLevel: 12500, baseOdds: "1.5T", type: "Prism", maxStats: { prismRuneSpeed: "x4", prismRuneLuck: "x11", bread: "x125k", water: "x1.88k" } },
@@ -302,8 +302,8 @@ const gameData = {
             { name: "Big Noob", maxLevel: "N/A", baseOdds: "100Sp", type: "Noobinial" },
             { name: "Huge Noob", maxLevel: "N/A", baseOdds: "1.5SxDe", type: "Noobinial" },
             { name: "Giant Noob", maxLevel: "N/A", baseOdds: "300QdVt", type: "Noobinial" },
-            { name: "Colossal Noob", maxLevel: "N/A", baseOdds: "1.5Tg", type: "Noobinial" },
-            { name: "Biggest Noob of all time", maxLevel: "N/A", baseOdds: "10Tg", type: "Noobinial" },
+            { name: "Colossal Noob", maxLevel: 12500, baseOdds: "1.5Tg", type: "Noobinial", maxStats: { oof: "x376", coin: "x251", shovelDamage: "x10k", coral: "x26", sand: "x6.25k", tierLuck: "x201", runeBulk: "x2", runeLuck: "x7.5" } },
+            { name: "Biggest Noob of all time", maxLevel: 5000, baseOdds: "10Tg", type: "Noobinial", maxStats: { oof: "x2.5k", coin: "x501", coral: "x51", trashCash: "x500k", sand: "x5k", tierLuck: "x251", runeBulk: "x2.5", runeLuck: "x8.5" } },
         ]
     },
     "Realm 4": {
@@ -322,8 +322,8 @@ const gameData = {
             { name: "Chaotic Destruction", maxLevel: 200, baseOdds: "15QnVt", type: "Noobinial", maxStats: { stars: "x100k", oof: "x2k", runeBulk: "x2", runeLuck: "x25", chips: "x10", alienXP: "x500", planets: "x3k", tierLuck: "x31" } }
         ],
         "Cosma": [
-            { name: "Asteroid", maxLevel: "370+", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x5.7", stars: "x21", alienCash: "x2" } },
-            { name: "Comet", maxLevel: "490+", baseOdds: "150UDe", type: "Normal", maxStats: { planets: "x5", spacePoints: "x3", knowledge: "x4", runeLuck: "x2.5", oof: "x13.7" } },
+            { name: "Asteroid", maxLevel: "600+", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x8", stars: "x21", alienCash: "x2" } },
+            { name: "Comet", maxLevel: 700, baseOdds: "150UDe", type: "Normal", maxStats: { planets: "x5", spacePoints: "x3", knowledge: "x4", runeLuck: "x2.5", oof: "x15" } },
             { name: "Satellite", maxLevel: 650, baseOdds: "3QdDe", type: "Normal", maxStats: { alienCash: "x4.5", oof: "x20.5", blackholes: "x3", planets: "x4.75", runeSpeed: "x1.5" } },
             { name: "Orbit", maxLevel: 575, baseOdds: "700SxDe", type: "Normal", maxStats: { runeLuck: "x1.5", prism: "x1.05", knowledge: "x2", stars: "x101", oof: "x24" } },
             { name: "Cluster", maxLevel: 500, baseOdds: "17.5NoDe", type: "Normal", maxStats: { planets: "x3", alienXP: "x1.5", alienCash: "x1.9", moon: "x8", oof: "x26" } },
@@ -337,22 +337,22 @@ const gameData = {
         "Light": [
             { name: "White", baseOdds: 1.01, type: "Normal" },
             { name: "Divine Light", baseOdds: "15NoDe", type: "Normal" },
-            { name: "Daylight", baseOdds: "1TVt", type: "Normal" },
-            { name: "Elemental Of Light", baseOdds: "1SpVt", type: "Normal" },
-            { name: "Protected", baseOdds: "1UTg", type: "Normal" },
-            { name: "Creation", baseOdds: "1.0e108", type: "Normal" },
+            { name: "Daylight", maxLevel: 75, baseOdds: "1TVt", type: "Normal", maxStats: { oof: "x4", yang: "x9", stars: "x301", coin: "x8.5" } },
+            { name: "Elemental Of Light", maxLevel: 100, baseOdds: "1SpVt", type: "Normal", maxStats: { yang: "x7", stars: "x10k", planets: "x26", blackholes: "x11" } },
+            { name: "Protected", maxLevel: 150, baseOdds: "1UTg", type: "Normal", maxStats: { oof: "x10", yang: "x8.5", stars: "x1.5k", planets: "x16" } },
+            { name: "Creation", maxLevel: 200, baseOdds: "1.0e108", type: "Normal", maxStats: { stars: "x400k", planets: "x151", yang: "x100", blackholes: "x51", coin: "x41" } },
             { name: "Angelic Goodness", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: { oof: "x26", yang: "x50", tierLuck: "x26", stars: "x25M", blackholes: "x251", planets: "x6.25k", runeLuck: "x1.5" } },
             { name: "Absolute Divinity", maxLevel: 100, baseOdds: "100SxVt", type: "Noobinial", maxStats: { oof: "x201", yang: "x100", alienCash: "x1k", coin: "x1k", tierLuck: "x36", stars: "x100B", runeBulk: "x1.25", runeLuck: "x7.5" } },
             { name: "Light Genesis", maxLevel: 100, baseOdds: "750SxVt", type: "Noobinial", maxStats: { chips: "x1.5", oof: "x301", yang: "x125", prism: "x1.2", tierLuck: "x51", coin: "x1.5k", runeBulk: "x1.5", runeLuck: "x3.75" } },
-            { name: "Ultimate Light", baseOdds: "2OcVt", type: "Noobinial", maxStats: { oof: "x51", yang: "x251", coin: "x1.25k", prism: "x1.1", tierLuck: "x63.5", tierBulk: "x13.5", runeBulk: "x1.2", runeLuck: "x5" } }
+            { name: "Ultimate Light", maxLevel: 250, baseOdds: "2OcVt", type: "Noobinial", maxStats: { oof: "x51", yang: "x251", coin: "x1.25k", prism: "x1.1", tierLuck: "x63.5", tierBulk: "x13.5", runeBulk: "x1.2", runeLuck: "x5" } }
         ],
         "Dark": [
             { name: "Black", baseOdds: 1.01, type: "Normal" },
             { name: "Infinite Darkness", baseOdds: "1TVt", type: "Normal" },
-            { name: "Midnight", baseOdds: "1TVt", type: "Normal" },
-            { name: "Dark Elemental", baseOdds: "1SpVt", type: "Normal" },
-            { name: "Doomed", baseOdds: "1UTg", type: "Normal" },
-            { name: "Destruction", baseOdds: "1.0e108", type: "Normal" },
+            { name: "Midnight", maxLevel: 75, baseOdds: "1TVt", type: "Normal", maxStats: { oof: "x4.75", yin: "x7", stars: "x301", coin: "x8.5" } },
+            { name: "Dark Elemental", maxLevel: 100, baseOdds: "1SpVt", type: "Normal", maxStats: { oof: "x9", yin: "x4", stars: "x1k", planets: "x11" } },
+            { name: "Doomed", maxLevel: 150, baseOdds: "1UTg", type: "Normal" , maxStats: { yin: "x3", stars: "x15k", planets: "x38.5", blackholes: "x16" } },
+            { name: "Destruction", maxLevel: 200, baseOdds: "1.0e108", type: "Normal", maxStats: { planets: "x151", yin: "x50", oof: "x21", stars: "x400k", blackholes: "x51" } },
             { name: "Demonic Evil", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: {stars: "x25M", blackholes: "x251", oof: "x51", yin: "x100", planets: "x751", coin: "x126", runeBulk: "x1.1", tierLuck: "x51" } },
             { name: "Absolute Darkness", maxLevel: 100, baseOdds: "2.5SpVt", type: "Noobinial", maxStats: { oof: "x1k", yin: "x100", chips: "x7.5", knowledge: "x1k", tierLuck: "x101", tierBulk: "x26", runeBulk: "x2", runeLuck: "x7.5" } },
             { name: "Dark Genesis", maxLevel: 75, baseOdds: "50SpVt", type: "Noobinial", maxStats: { oof: "x1.88k", yin: "x100", chips: "x2", prism: "x1.2", tierLuck: "x57.3", tierBulk: "x12.2", runeBulk: "x2.5", runeLuck: "x10" } },
