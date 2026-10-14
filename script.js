@@ -1,5 +1,15 @@
 // Extended Suffix Parser & Formatter (up to Quadragintillions)
 const SUFFIXES = [
+    { suffix: "Nosg", value: 1e210 },
+    { suffix: "Ocsg", value: 1e207 },
+    { suffix: "Spsg", value: 1e204 },
+    { suffix: "Sxsg", value: 1e201 },
+    { suffix: "Qnsg", value: 1e198 },
+    { suffix: "Qdsg", value: 1e195 },
+    { suffix: "Tsg", value: 1e192 },
+    { suffix: "Dsg", value: 1e189 },
+    { suffix: "Usg", value: 1e186 },
+    { suffix: "sg", value: 1e183 },
     { suffix: "NoQg", value: 1e180 },
     { suffix: "OcQg", value: 1e177 },
     { suffix: "SpQg", value: 1e174 },
@@ -412,6 +422,21 @@ const gameData = {
             { name: "The Best", maxLevel: "N/A", baseOdds: "1.2e157", type: "Normal" }
         ]
     },
+    "Realm 6": {
+        "Ares": [
+            { name: "Warrior", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Clash", maxLevel: "N/A", baseOdds: "1QdVt", type: "Normal" },
+            { name: "Bloodshed", maxLevel: "N/A", baseOdds: "10DTg", type: "Normal" },
+            { name: "Rage", maxLevel: "N/A", baseOdds: "100qg", type: "Normal" },
+            { name: "Valor", maxLevel: "N/A", baseOdds: "1Noqg", type: "Normal" },
+            { name: "Carnage", maxLevel: "N/A", baseOdds: "10Qg", type: "Normal" },
+            { name: "Dominion", maxLevel: "N/A", baseOdds: "1UQg", type: "Normal" },
+            { name: "Conquest", maxLevel: "N/A", baseOdds: "100UQg", type: "Normal" },
+            { name: "War Eternal", maxLevel: "N/A", baseOdds: "10DQg", type: "Normal" },
+            { name: "War Immortal", maxLevel: "N/A", baseOdds: "2.5DTg", type: "Noobinial" },
+            { name: "Wrath Eternal", maxLevel: "N/A", baseOdds: "15DTg", type: "Noobinial" },
+        ]
+    },
     "Events": {
         "Football": [
             { name: "Scuff", maxLevel: 1500, baseOdds: 1.12, type: "Normal", maxStats: { goals: "x5.5", oof: "x151" } },
@@ -653,6 +678,10 @@ function calculate() {
             trashCash: "Max Trash Cash",
             pearl: "Max Pearl",
             seaPoints: "Max Sea Points",
+            glory: "Max Glory",
+            momentum: "Max Momentum",
+            colosseumDamage: "Max Colosseum Damage",
+            colosseumHp: "Max Colosseum HP",
         };
 
         // Dynamically build stat rows for stats that exist in gameData
