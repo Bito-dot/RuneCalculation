@@ -77,7 +77,7 @@ function parseSuffixNumber(input) {
     let str = input.toString().trim();
 
     for (let s of SUFFIXES) {
-        let regex = new RegExp(`^([0-9.]+)\\s*${s.suffix}$`, "i");
+        let regex = new RegExp(`^([0-9.]+)\\s*${s.suffix}$`);
         let match = str.match(regex);
         if (match) {
             let numPart = parseFloat(match[1]);
