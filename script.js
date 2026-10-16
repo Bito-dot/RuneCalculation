@@ -435,6 +435,19 @@ const gameData = {
             { name: "War Eternal", maxLevel: "N/A", baseOdds: "10DQg", type: "Normal" },
             { name: "War Immortal", maxLevel: "N/A", baseOdds: "2.5DTg", type: "Noobinial" },
             { name: "Wrath Eternal", maxLevel: "N/A", baseOdds: "15DTg", type: "Noobinial" },
+        ],
+        "Apollo": [
+            { name: "Whisper", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Glow", maxLevel: "N/A", baseOdds: "20QdVt", type: "Normal" },
+            { name: "Lyric", maxLevel: "N/A", baseOdds: "300DTg", type: "Normal" },
+            { name: "Pulse", maxLevel: "N/A", baseOdds: "4Uqg", type: "Normal" },
+            { name: "Harmony", maxLevel: "N/A", baseOdds: "50Noqg", type: "Normal" },
+            { name: "Shine", maxLevel: "N/A", baseOdds: "100Qg", type: "Normal" },
+            { name: "Oracle", maxLevel: "N/A", baseOdds: "2DQg", type: "Normal" },
+            { name: "Divinity", maxLevel: "N/A", baseOdds: "50DQg", type: "Normal" },
+            { name: "Solar Crown", maxLevel: "N/A", baseOdds: "1TQg", type: "Normal" },
+            { name: "Beyond the Stars", maxLevel: "N/A", baseOdds: "9.75DTg", type: "Noobinial" },
+            { name: "Beyond the Galaxy", maxLevel: "N/A", baseOdds: "35DTg", type: "Noobinial" }
         ]
     },
     "Events": {
