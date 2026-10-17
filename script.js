@@ -307,11 +307,11 @@ const gameData = {
             { name: "Omnira", maxLevel: 35, baseOdds: "1.25Qd", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x4", prismRuneLuck: "x18.5", prism: "x1.25", oof: "x71", sand: "x4.5", souls: "x176", runeBulk: "x1.25", tierLuck: "x71" } }
         ],
         "Mini Noobinial": [
-            { name: "Mini Noob", maxLevel: "N/A", baseOdds: 1.01, type: "Noobinial" },
-            { name: "Noob", maxLevel: "N/A", baseOdds: "8M", type: "Noobinial" },
-            { name: "Big Noob", maxLevel: "N/A", baseOdds: "100Sp", type: "Noobinial" },
-            { name: "Huge Noob", maxLevel: "N/A", baseOdds: "1.5SxDe", type: "Noobinial" },
-            { name: "Giant Noob", maxLevel: "N/A", baseOdds: "300QdVt", type: "Noobinial" },
+            { name: "Mini Noob", maxLevel: 30000, baseOdds: 1.01, type: "Noobinial", maxStats: { souls: "x3", sand: "x16", runeBulk: "x1.1", meat: "x6", oof: "x91", coin: "x301" } },
+            { name: "Noob", maxLevel: 25000, baseOdds: "8M", type: "Noobinial", maxStats: { tierLuck: "x2", sand: "x501", runeBulk: "x1.25", stars: "x2", spacePoints: "x1.5", planets: "x2.75", moon: "x3", oof: "x16" } },
+            { name: "Big Noob", maxLevel: 22500, baseOdds: "100Sp", type: "Noobinial", maxStats: { oof: "x201", yin: "x2.25", yang: "x1.5", chips: "x2.5", alienCash: "x3", knowledge: "x2.5", shovelDamage: "x501", sand: "x11.3k" } },
+            { name: "Huge Noob", maxLevel: 20000, baseOdds: "1.5SxDe", type: "Noobinial", maxStats: { oof: "x301", yang: "x3.5", yin: "x1.5", coin: "x201", shovelDamage: "x76", bubbles: "x51  ", sand: "x4M", coral: "x25k" } },
+            { name: "Giant Noob", maxLevel: 17500, baseOdds: "300QdVt", type: "Noobinial", maxStats: { oof: "x251", coin: "x176", shovelDamage: "x5k", spacePoints: "x1.75k", sand: "x17.5M", tierLuck: "x36", coral: "x17.5M" } },
             { name: "Colossal Noob", maxLevel: 12500, baseOdds: "1.5Tg", type: "Noobinial", maxStats: { oof: "x376", coin: "x251", shovelDamage: "x10k", coral: "x26", sand: "x6.25k", tierLuck: "x201", runeBulk: "x2", runeLuck: "x7.5" } },
             { name: "Biggest Noob of all time", maxLevel: 5000, baseOdds: "10Tg", type: "Noobinial", maxStats: { oof: "x2.5k", coin: "x501", coral: "x51", trashCash: "x500k", sand: "x5k", tierLuck: "x251", runeBulk: "x2.5", runeLuck: "x8.5" } },
         ]
@@ -413,13 +413,13 @@ const gameData = {
             { name: "Prismatic Ocean", maxLevel: 150, baseOdds: "55Sx", type: "Noobinial Prism", maxStats: { prismRuneBulk: "x2", prismRuneLuck: "x2", prism: "x1.1", oof: "x1.5k", seaPoints: "x201", coin: "x151", runeBulk: "x1.2", tierLuck: "x76" } }
         ],
         "Mini Non Noobinial": [
-            { name: "Pro", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Very Pro", maxLevel: "N/A", baseOdds: "500OcDe", type: "Normal" },
-            { name: "Insanely Pro", maxLevel: "N/A", baseOdds: "500OcVt", type: "Normal" },
-            { name: "Dedicated Pro", maxLevel: "N/A", baseOdds: "5.0e119", type: "Normal" },
-            { name: "Awakened Pro", maxLevel: "N/A", baseOdds: "1.5e149", type: "Normal" },
-            { name: "One of the Best", maxLevel: "N/A", baseOdds: "5.0e155", type: "Normal" },
-            { name: "The Best", maxLevel: "N/A", baseOdds: "1.2e157", type: "Normal" }
+            { name: "Pro", maxLevel: 165000, baseOdds: 1.01, type: "Normal", maxStats: { bubbles: "x3", coral: "x3", oof: "x5", yang: "x16.5k" } },
+            { name: "Very Pro", maxLevel: 150000, baseOdds: "500OcDe", type: "Normal", maxStats: { bubbles: "x3", coral: "x3", oof: "x501", sand: "x501", yin: "x7.5k" } },
+            { name: "Insanely Pro", maxLevel: 150000, baseOdds: "500OcVt", type: "Normal", maxStats: { seaPoints: "x15", coral: "x5", pearl: "x1k", oof: "x1.25k", shovelDamage: "x500", yin: "x3k", yang: "x7.5k" } },
+            { name: "Dedicated Pro", maxLevel: 125000, baseOdds: "5.0e119", type: "Normal", maxStats: { pearl: "x750k", coral: "x62.5M", oil: "x750k", oof: "x1k", sand: "x20M", shovelDamage: "x50", yin: "x6.25k", yang: "x12.5k" } },
+            { name: "Awakened Pro", maxLevel: 100000, baseOdds: "1.5e149", type: "Normal", maxStats: { coral: "x10k", trashCash: "x10k", tierLuck: "x101", oof: "x251", yin: "x10k", yang: "x25k", runeLuck: "x10", coin: "x1k" } },
+            { name: "One of the Best", maxLevel: 200000, baseOdds: "5.0e155", type: "Normal", maxStats: { coral: "x50k", tierLuck: "x201", oof: "x126", yin: "x50k", yang: "x200k", runeLuck: "x2.5", runeBulk: "x2", coin: "x251" } },
+            { name: "The Best", maxLevel: 25000, baseOdds: "1.2e157", type: "Normal", maxStats: { coral: "x100k", tierLuck: "x501", oof: "x76", yin: "x12.5k", yang: "x50k", runeLuck: "x2.5", runeBulk: "x1.75", coin: "x501" } }
         ]
     },
     "Realm 6": {
