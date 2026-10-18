@@ -435,6 +435,7 @@ const gameData = {
             { name: "War Eternal", maxLevel: "N/A", baseOdds: "10DQg", type: "Normal" },
             { name: "War Immortal", maxLevel: "N/A", baseOdds: "2.5DTg", type: "Noobinial" },
             { name: "Wrath Eternal", maxLevel: "N/A", baseOdds: "15DTg", type: "Noobinial" },
+            { name: "Wrath Immortal", maxLevel: "N/A", baseOdds: "10TTg", type: "Noobinial" }
         ],
         "Apollo": [
             { name: "Whisper", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
@@ -447,7 +448,21 @@ const gameData = {
             { name: "Divinity", maxLevel: "N/A", baseOdds: "50DQg", type: "Normal" },
             { name: "Solar Crown", maxLevel: "N/A", baseOdds: "1TQg", type: "Normal" },
             { name: "Beyond the Stars", maxLevel: "N/A", baseOdds: "9.75DTg", type: "Noobinial" },
-            { name: "Beyond the Galaxy", maxLevel: "N/A", baseOdds: "35DTg", type: "Noobinial" }
+            { name: "Beyond the Galaxy", maxLevel: "N/A", baseOdds: "35DTg", type: "Noobinial" },
+            { name: "Beyond the Universe", maxLevel: "N/A", baseOdds: "35TTg", type: "Noobinial" }
+        ],
+        "Zeus": [
+            { name: "Bolt", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Cloud", maxLevel: "N/A", baseOdds: "10SpVt", type: "Normal" },
+            { name: "Storm", maxLevel: "N/A", baseOdds: "20DTg", type: "Normal" },
+            { name: "Thunder", maxLevel: "N/A", baseOdds: "30SpTg", type: "Normal" },
+            { name: "Charge", maxLevel: "N/A", baseOdds: "50Dqg", type: "Normal" },
+            { name: "Strike", maxLevel: "N/A", baseOdds: "75Spqg", type: "Normal" },
+            { name: "Tempest", maxLevel: "N/A", baseOdds: "50TQg", type: "Normal" },
+            { name: "Skyking", maxLevel: "N/A", baseOdds: "1QdQg", type: "Normal" },
+            { name: "Olympian", maxLevel: "N/A", baseOdds: "20QdQg", type: "Normal" },
+            { name: "Thunder Lord", maxLevel: "N/A", baseOdds: "3.5TTg", type: "Noobinial" },
+            { name: "Eternal Thunder", maxLevel: "N/A", baseOdds: "150TTg", type: "Noobinial" },
         ]
     },
     "Events": {
