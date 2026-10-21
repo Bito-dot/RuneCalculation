@@ -208,18 +208,18 @@ const gameData = {
             { name: "Ultimate Shard", maxLevel: 25, baseOdds: "250B", type: "Noobinial Prism", maxStats: { prism: "x1.5", cash: "x1.25k", oof: "x25M", bread: "x51", coin: "x13.5", runeBulk: "x2.25", tierLuck: "x51" } }
         ],
         "Awakend": [
-            { name: "Potential", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Limitless", maxLevel: "N/A", baseOdds: "1QdVt", type: "Normal" },
-            { name: "Incomparable", maxLevel: "N/A", baseOdds: "1SpVt", type: "Normal" },
-            { name: "Unfathomable", maxLevel: "N/A", baseOdds: "1000NoVt", type: "Normal" },
-            { name: "Unmatched", maxLevel: "N/A", baseOdds: "1.0e102", type: "Normal" },
-            { name: "Unbelievable", maxLevel: "N/A", baseOdds: "1.0e111", type: "Normal" },
-            { name: "Untouchable", maxLevel: "N/A", baseOdds: "1.0e120", type: "Normal" },
-            { name: "Unstoppable", maxLevel: "N/A", baseOdds: "1.0e129", type: "Normal" },
-            { name: "Unrivaled", maxLevel: "N/A", baseOdds: "1.0e138", type: "Normal" },
-            { name: "Unconquerable", maxLevel: "N/A", baseOdds: "1.0e147", type: "Normal" },
-            { name: "Unforgettable", maxLevel: "N/A", baseOdds: "1.0e156", type: "Normal" },
-            { name: "Otherworldly", maxLevel: "N/A", baseOdds: "1.5UTg", type: "Noobinial" }
+            { name: "Potential", maxLevel: 111, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x51", hackPoints: "x28.8", water: "x28.8", gem: "x28.8", planks: "x28.8", tierLuck: "x6.55", coin: "x2.11", seaPoints: "x1.5" } },
+            { name: "Limitless", maxLevel: 500, baseOdds: "1QdVt", type: "Normal", maxStats: { oof: "x326", coin: "x11", yang: "x26", alienCash: "x3" } },
+            { name: "Incomparable", maxLevel: 550, baseOdds: "1SpVt", type: "Normal", maxStats: { oof: "x691", coin: "x17.5", yin: "x28.5", chips: "x3" } },
+            { name: "Unfathomable", maxLevel: 850, baseOdds: "1000NoVt", type: "Normal", maxStats: { oof: "x1.5k", coin: "x35", yang: "x86", pearl: "x851" } },
+            { name: "Unmatched", maxLevel: 1333, baseOdds: "1.0e102", type: "Normal", maxStats: { oof: "x2.75k", coin: "x67.7", yin: "x134", trashCash: "x13.3k" } },
+            { name: "Unbelievable", maxLevel: 2000, baseOdds: "1.0e111", type: "Normal", maxStats: { oof: "x4.5k", coin: "x121", yang: "x301", seaPoints: "x401" } },
+            { name: "Untouchable", maxLevel: 5000, baseOdds: "1.0e120", type: "Normal", maxStats: { oof: "x7.5k", coin: "x351", yin: "x751", fire: "x15k", cash: "x50k", seaPoints: "x51" } },
+            { name: "Unstoppable", maxLevel: 10000, baseOdds: "1.0e129", type: "Normal", maxStats: { oof: "x15k", coin: "x801", yang: "x2k", yin: "x1.5k", seaPoints: "x201", blaze: "x301", fire: "x10k", cash: "x10k" } },
+            { name: "Unrivaled", maxLevel: 12000, baseOdds: "1.0e138", type: "Normal", maxStats: { oof: "x12.5k", coin: "x10.8k", fire: "x3k", cash: "x3k", seaPoints: "x21", yang: "x3k", yin: "x2.4k" } },
+            { name: "Unconquerable", maxLevel: 35000, baseOdds: "1.0e147", type: "Normal", maxStats: { oof: "x2.5k", runeBulk: "x1.05", seaPoints: "x35k", tierLuck: "x2k", swordDamage: "x6", yang: "x8.75k", yin: "x7k", coin: "x3.5k" } },
+            { name: "Unforgettable", maxLevel: 100000, baseOdds: "1.0e156", type: "Normal", maxStats: { oof: "x1.5k", fire: "x1M", blaze: "x1M", cash: "x1M", tierLuck: "x10k", tierBulk: "x3", runeBulk: "x1.25", runeLuck: "x1.25" } },
+            { name: "Otherworldly", maxLevel: 15000, baseOdds: "1.5UTg", type: "Noobinial", maxStats: { oof: "x1k", tierLuck: "x10k", tierBulk: "x3.5", yin: "x375k", runeBulk: "x1.35", runeLuck: "x1.35", coin: "x375k", prismRuneBulk: "x1.25" } }
         ]
     },
     "Realm 2": {
@@ -332,7 +332,7 @@ const gameData = {
             { name: "Chaotic Destruction", maxLevel: 200, baseOdds: "15QnVt", type: "Noobinial", maxStats: { stars: "x100k", oof: "x2k", runeBulk: "x2", runeLuck: "x25", chips: "x10", alienXP: "x500", planets: "x3k", tierLuck: "x31" } }
         ],
         "Cosma": [
-            { name: "Asteroid", maxLevel: "600+", baseOdds: 1.01, type: "Normal", maxStats: { oof: "x8", stars: "x21", alienCash: "x2" } },
+            { name: "Asteroid", maxLevel: 750, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x8", stars: "x21", alienCash: "x2" } },
             { name: "Comet", maxLevel: 700, baseOdds: "150UDe", type: "Normal", maxStats: { planets: "x5", spacePoints: "x3", knowledge: "x4", runeLuck: "x2.5", oof: "x15" } },
             { name: "Satellite", maxLevel: 650, baseOdds: "3QdDe", type: "Normal", maxStats: { alienCash: "x4.5", oof: "x20.5", blackholes: "x3", planets: "x4.75", runeSpeed: "x1.5" } },
             { name: "Orbit", maxLevel: 575, baseOdds: "700SxDe", type: "Normal", maxStats: { runeLuck: "x1.5", prism: "x1.05", knowledge: "x2", stars: "x101", oof: "x24" } },
@@ -345,8 +345,8 @@ const gameData = {
             { name: "Elemental Creation", maxLevel: 100, baseOdds: "200QnVt", type: "Noobinial", maxStats: { runeBulk: "x3", runeSpeed: "x2", oof: "x2.5k", alienCash: "x501", tierLuck: "x36", tierBulk: "x16", knowledge: "x101", blackholes: "x1k" } }
         ],
         "Light": [
-            { name: "White", baseOdds: 1.01, type: "Normal" },
-            { name: "Divine Light", baseOdds: "15NoDe", type: "Normal" },
+            { name: "White", maxLevel: 15, baseOdds: 1.01, type: "Normal", maxStats: { yang: "x10", sand: "x15Qd", stars: "x4", knowledge: "x4", alienCash: "x5" } },
+            { name: "Divine Light", maxLevel: 65, baseOdds: "15NoDe", type: "Normal", maxStats: { oof: "x2.95", yang: "x8", stars: "x66", coin: "x4.25" } },
             { name: "Daylight", maxLevel: 75, baseOdds: "1TVt", type: "Normal", maxStats: { oof: "x4", yang: "x9", stars: "x301", coin: "x8.5" } },
             { name: "Elemental Of Light", maxLevel: 100, baseOdds: "1SpVt", type: "Normal", maxStats: { yang: "x7", stars: "x10k", planets: "x26", blackholes: "x11" } },
             { name: "Protected", maxLevel: 150, baseOdds: "1UTg", type: "Normal", maxStats: { oof: "x10", yang: "x8.5", stars: "x1.5k", planets: "x16" } },
@@ -357,8 +357,8 @@ const gameData = {
             { name: "Ultimate Light", maxLevel: 250, baseOdds: "2OcVt", type: "Noobinial", maxStats: { oof: "x51", yang: "x251", coin: "x1.25k", prism: "x1.1", tierLuck: "x63.5", tierBulk: "x13.5", runeBulk: "x1.2", runeLuck: "x5" } }
         ],
         "Dark": [
-            { name: "Black", baseOdds: 1.01, type: "Normal" },
-            { name: "Infinite Darkness", baseOdds: "1TVt", type: "Normal" },
+            { name: "Black", maxLevel: 15, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1.45", yin: "x10", ice: "x15Qd", chips: "x3" } },
+            { name: "Infinite Darkness", maxLevel: 65, baseOdds: "1TVt", type: "Normal", maxStats: { yin: "x8", stars: "x66", coin: "x4.25", bones: "x65Qd" } },
             { name: "Midnight", maxLevel: 75, baseOdds: "1TVt", type: "Normal", maxStats: { oof: "x4.75", yin: "x7", stars: "x301", coin: "x8.5" } },
             { name: "Dark Elemental", maxLevel: 100, baseOdds: "1SpVt", type: "Normal", maxStats: { oof: "x9", yin: "x4", stars: "x1k", planets: "x11" } },
             { name: "Doomed", maxLevel: 150, baseOdds: "1UTg", type: "Normal" , maxStats: { yin: "x3", stars: "x15k", planets: "x38.5", blackholes: "x16" } },
@@ -366,7 +366,7 @@ const gameData = {
             { name: "Demonic Evil", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: {stars: "x25M", blackholes: "x251", oof: "x51", yin: "x100", planets: "x751", coin: "x126", runeBulk: "x1.1", tierLuck: "x51" } },
             { name: "Absolute Darkness", maxLevel: 100, baseOdds: "2.5SpVt", type: "Noobinial", maxStats: { oof: "x1k", yin: "x100", chips: "x7.5", knowledge: "x1k", tierLuck: "x101", tierBulk: "x26", runeBulk: "x2", runeLuck: "x7.5" } },
             { name: "Dark Genesis", maxLevel: 75, baseOdds: "50SpVt", type: "Noobinial", maxStats: { oof: "x1.88k", yin: "x100", chips: "x2", prism: "x1.2", tierLuck: "x57.3", tierBulk: "x12.2", runeBulk: "x2.5", runeLuck: "x10" } },
-            { name: "Ultimate Darkness", baseOdds: "25OcVt", type: "Noobinial", maxStats: { oof: "x201", yin: "x201", coin: "x10k", prism: "x1.14", tierLuck: "x201", tierBulk: "x21", runeBulk: "x1.4", runeLuck: "x10" } }
+            { name: "Ultimate Darkness", maxLevel: 200, baseOdds: "25OcVt", type: "Noobinial", maxStats: { oof: "x201", yin: "x201", coin: "x10k", prism: "x1.14", tierLuck: "x201", tierBulk: "x21", runeBulk: "x1.4", runeLuck: "x10" } }
         ]
     },
     "Realm 5": {
@@ -424,27 +424,27 @@ const gameData = {
     },
     "Realm 6": {
         "Ares": [
-            { name: "Warrior", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Clash", maxLevel: "N/A", baseOdds: "1QdVt", type: "Normal" },
+            { name: "Warrior", maxLevel: 25000, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1k", glory: "x2", coin: "x251" } },
+            { name: "Clash", maxLevel: 25000, baseOdds: "1QdVt", type: "Normal", maxStats: { oof: "x2k", momentum: "x11", coin: "x501" } },
             { name: "Bloodshed", maxLevel: "N/A", baseOdds: "10DTg", type: "Normal" },
             { name: "Rage", maxLevel: "N/A", baseOdds: "100qg", type: "Normal" },
             { name: "Valor", maxLevel: "N/A", baseOdds: "1Noqg", type: "Normal" },
             { name: "Carnage", maxLevel: "N/A", baseOdds: "10Qg", type: "Normal" },
-            { name: "Dominion", maxLevel: "N/A", baseOdds: "1UQg", type: "Normal" },
-            { name: "Conquest", maxLevel: "N/A", baseOdds: "100UQg", type: "Normal" },
+            { name: "Dominion", maxLevel: 25000, baseOdds: "1UQg", type: "Normal", maxStats: { oof: "x7k", glory: "x3", momentum: "x3", tierLuck: "x26", coin: "x25k" } },
+            { name: "Conquest", maxLevel: 1000, baseOdds: "100UQg", type: "Normal", maxStats: { oof: "x8k", colosseumDamage: "x2.5", colosseumHp: "x2.5", runeBulk: "x1.2", runeLuck: "x1.2", tierLuck: "x51", glory: "x6", momentum: "x6" } },
             { name: "War Eternal", maxLevel: "N/A", baseOdds: "10DQg", type: "Normal" },
             { name: "War Immortal", maxLevel: "N/A", baseOdds: "2.5DTg", type: "Noobinial" },
             { name: "Wrath Eternal", maxLevel: "N/A", baseOdds: "15DTg", type: "Noobinial" },
             { name: "Wrath Immortal", maxLevel: "N/A", baseOdds: "10TTg", type: "Noobinial" }
         ],
         "Apollo": [
-            { name: "Whisper", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Glow", maxLevel: "N/A", baseOdds: "20QdVt", type: "Normal" },
-            { name: "Lyric", maxLevel: "N/A", baseOdds: "300DTg", type: "Normal" },
-            { name: "Pulse", maxLevel: "N/A", baseOdds: "4Uqg", type: "Normal" },
-            { name: "Harmony", maxLevel: "N/A", baseOdds: "50Noqg", type: "Normal" },
+            { name: "Whisper", maxLevel: 25000, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x5k", radiance: "x2.5", coin: "x251" } },
+            { name: "Glow", maxLevel: 25000, baseOdds: "20QdVt", type: "Normal", maxStats: { oof: "x10k", radiance: "x2", yin: "x1.25k", yang: "x1.25k" } },
+            { name: "Lyric", maxLevel: 25000, baseOdds: "300DTg", type: "Normal", maxStats: { oof: "x15k", radiance: "x5.5", momentum: "x3.25", glory: "x5", coin: "x12.5k" } },
+            { name: "Pulse", maxLevel: 25000, baseOdds: "4Uqg", type: "Normal", maxStats: { oof: "x20k", radiance: "x3.25", chariotStrength: "x30", momentum: "x3", chariotNoobPower: "x400", glory: "x4", coin: "x2.5k" } },
+            { name: "Harmony", maxLevel: 25000, baseOdds: "50Noqg", type: "Normal", maxStats: { oof: "x25k", radiance: "x1.75", yin: "x2.5k", yang: "x2.5k" } },
             { name: "Shine", maxLevel: "N/A", baseOdds: "100Qg", type: "Normal" },
-            { name: "Oracle", maxLevel: "N/A", baseOdds: "2DQg", type: "Normal" },
+            { name: "Oracle", maxLevel: 25000, baseOdds: "2DQg", type: "Normal", maxStats: { oof: "x35k", momentum: "x6", glory: "x6", radiance: "x35", starlight: "x35", coin: "x6.25k", tierLuck: "x11" } },
             { name: "Divinity", maxLevel: "N/A", baseOdds: "50DQg", type: "Normal" },
             { name: "Solar Crown", maxLevel: "N/A", baseOdds: "1TQg", type: "Normal" },
             { name: "Beyond the Stars", maxLevel: "N/A", baseOdds: "9.75DTg", type: "Noobinial" },
@@ -678,6 +678,7 @@ function calculate() {
             sand: "Max Sand",
             water: "Max Water",
             shovelDamage: "Max Shovel Damage",
+            swordDamage: "Max Sword Damage",
             oreDamage: "Max Ore Damage",
             oreStats: "Max Ore Stats",
             souls: "Max Souls",
@@ -708,6 +709,13 @@ function calculate() {
             seaPoints: "Max Sea Points",
             glory: "Max Glory",
             momentum: "Max Momentum",
+            thunder: "Max Thunder",
+            radiance: "Max Radiance",
+            starlight: "Max Starlight",
+            burden: "Max Burden",
+            authority: "Max Authority",
+            chariotStrength: "Max Chariot Strength",
+            chariotNoobPower: "Max Chariot Noob Power",
             colosseumDamage: "Max Colosseum Damage",
             colosseumHp: "Max Colosseum HP",
         };
