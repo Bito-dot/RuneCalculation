@@ -488,8 +488,8 @@ const gameData = {
             { name: "Cursed", maxLevel: "N/A", baseOdds: "1M", type: "Normal" },
             { name: "Spectral", maxLevel: "N/A", baseOdds: "15M", type: "Normal" },
             { name: "Zombie", maxLevel: "N/A", baseOdds: "500M", type: "Normal" },
-            { name: "Treats", maxLevel: "N/A", baseOdds: "10B", type: "Noobinial" },
-            { name: "Spooky", maxLevel: "N/A", baseOdds: "250B", type: "Noobinial" },
+            { name: "Treats", maxLevel: "N/A", baseOdds: "20B", type: "Normal" },
+            { name: "Spooky", maxLevel: "N/A", baseOdds: "500B", type: "Normal" },
         ]
     }
 };
