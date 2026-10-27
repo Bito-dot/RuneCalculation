@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  padding: 20px;
+    background: linear-gradient(to bottom, #ff6b00 0%, #3b0764 100%) !important;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fff;
 }
 
 .container {

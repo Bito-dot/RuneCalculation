@@ -480,6 +480,17 @@ const gameData = {
             { name: "Victory", maxLevel: 20, baseOdds: "100Sx", type: "Noobinial", maxStats: { goals: "x21", wheat: "x21", coin: "x7", bread: "x17", footballRuneBulk: "x16" } },
             { name: "Iconic", maxLevel: 20, baseOdds: "2.5Sp", type: "Noobinial", maxStats: { goals: "x36", oreDamage: "x2", gems: "x2", oreStats: "x3", prism: "x1.2", footballRuneBulk: "x5" } }
         ],
+        "Spooky": [
+            { name: "Creepy", maxLevel: "N/A", baseOdds: 1.11, type: "Normal" },
+            { name: "Haunted", maxLevel: "N/A", baseOdds: 10, type: "Normal" },
+            { name: "Ghastly", maxLevel: "N/A", baseOdds: "2.5k", type: "Normal" },
+            { name: "Wicked", maxLevel: "N/A", baseOdds: "37.5k", type: "Normal" },
+            { name: "Cursed", maxLevel: "N/A", baseOdds: "500k", type: "Normal" },
+            { name: "Spectral", maxLevel: "N/A", baseOdds: "7.5M", type: "Normal" },
+            { name: "Zombie", maxLevel: "N/A", baseOdds: "250M", type: "Normal" },
+            { name: "Treats", maxLevel: "N/A", baseOdds: "10B", type: "Noobinial" },
+            { name: "Spooky", maxLevel: "N/A", baseOdds: "250B", type: "Noobinial" },
+        ]
     }
 };
 
@@ -506,6 +517,18 @@ const rpsOutput = document.getElementById("rpsOutput");
 const prismRpsOutput = document.getElementById("prismRpsOutput");
 const runeResultContainer = document.getElementById("runeResultContainer");
 
+const halloweenSpeedInput = document.getElementById("halloweenSpeedSec");
+const halloweenSpeedBoost = document.getElementById("halloweenSpeedBoost");
+const halloweenBulkInput = document.getElementById("halloweenBulk");
+const halloweenBulkBoost = document.getElementById("halloweenBulkBoost");
+const halloweenLuckInput = document.getElementById("halloweenLuck");
+const halloweenLuckBoost = document.getElementById("halloweenLuckBoost");
+const halloweenHideInstantToggle = document.getElementById("halloweenHideInstantToggle");
+const halloweenRpsOutput = document.getElementById("halloweenRpsOutput");
+
+const standardControls = document.getElementById("standardControls");
+const halloweenControls = document.getElementById("halloweenControls");
+
 let activeRealm = "";
 let activeCategory = "";
 
@@ -528,6 +551,17 @@ function saveInputsToStorage() {
 
     localStorage.setItem("active_realm", activeRealm);
     localStorage.setItem("active_category", activeCategory);
+
+    localStorage.setItem("halloween_speedSec", halloweenSpeedInput ? halloweenSpeedInput.value : "");
+    localStorage.setItem("halloween_speedBoost", halloweenSpeedBoost ? halloweenSpeedBoost.checked : false);
+    localStorage.setItem("halloween_bulk", halloweenBulkInput ? halloweenBulkInput.value : "");
+    localStorage.setItem("halloween_bulkBoost", halloweenBulkBoost ? halloweenBulkBoost.checked : false);
+    localStorage.setItem("halloween_luck", halloweenLuckInput ? halloweenLuckInput.value : "");
+    localStorage.setItem("halloween_luckBoost", halloweenLuckBoost ? halloweenLuckBoost.checked : false);
+    if (halloweenHideInstantToggle) localStorage.setItem("halloween_hideInstant", halloweenHideInstantToggle.checked);
+
+    localStorage.setItem("active_realm", activeRealm);
+    localStorage.setItem("active_category", activeCategory);
 }
 
 function loadSavedInputs() {
@@ -546,6 +580,14 @@ function loadSavedInputs() {
     if (prismLuckInput && localStorage.getItem("prism_luck") !== null) prismLuckInput.value = localStorage.getItem("prism_luck");
     if (prismLuckBoost && localStorage.getItem("prism_luckBoost") !== null) prismLuckBoost.checked = localStorage.getItem("prism_luckBoost") === "true";
     if (prismHideInstantToggle && localStorage.getItem("prism_hideInstant") !== null) prismHideInstantToggle.checked = localStorage.getItem("prism_hideInstant") === "true";
+
+    if (halloweenSpeedInput && localStorage.getItem("halloween_speedSec") !== null) halloweenSpeedInput.value = localStorage.getItem("halloween_speedSec");
+    if (halloweenSpeedBoost && localStorage.getItem("halloween_speedBoost") !== null) halloweenSpeedBoost.checked = localStorage.getItem("halloween_speedBoost") === "true";
+    if (halloweenBulkInput && localStorage.getItem("halloween_bulk") !== null) halloweenBulkInput.value = localStorage.getItem("halloween_bulk");
+    if (halloweenBulkBoost && localStorage.getItem("halloween_bulkBoost") !== null) halloweenBulkBoost.checked = localStorage.getItem("halloween_bulkBoost") === "true";
+    if (halloweenLuckInput && localStorage.getItem("halloween_luck") !== null) halloweenLuckInput.value = localStorage.getItem("halloween_luck");
+    if (halloweenLuckBoost && localStorage.getItem("halloween_luckBoost") !== null) halloweenLuckBoost.checked = localStorage.getItem("halloween_luckBoost") === "true";
+    if (halloweenHideInstantToggle && localStorage.getItem("halloween_hideInstant") !== null) halloweenHideInstantToggle.checked = localStorage.getItem("halloween_hideInstant") === "true";
 }
 
 function initRealms() {
@@ -597,8 +639,22 @@ function updateCategories() {
     calculate();
 }
 
+const standardPrismMetrics = document.getElementById("standardPrismMetrics");
+const halloweenMetrics = document.getElementById("halloweenMetrics");
+
 function calculate() {
-    // 1. Calculate Rune Stats
+    const isSpookyCategory = activeCategory.toLowerCase() === "spooky";
+    const isPrismCategory = activeCategory.toLowerCase().includes("prism");
+
+    // Toggle Input Panel Visibility
+    if (standardControls) standardControls.style.display = isSpookyCategory ? "none" : "block";
+    if (halloweenControls) halloweenControls.style.display = isSpookyCategory ? "block" : "none";
+
+    // Toggle Metric Box Visibility
+    if (standardPrismMetrics) standardPrismMetrics.style.display = isSpookyCategory ? "none" : "block";
+    if (halloweenMetrics) halloweenMetrics.style.display = isSpookyCategory ? "block" : "none";
+
+    // 1. Calculate Standard Rune Stats
     let rawSpeedSec = parseFloat(speedInput.value);
     if (isNaN(rawSpeedSec) || rawSpeedSec < 0.05) rawSpeedSec = 0.05;
     let runeFinalSpeed = (1 / rawSpeedSec) * (speedBoost.checked ? 2.0 : 1.0);
@@ -614,9 +670,18 @@ function calculate() {
     let prismFinalLuck = parseSuffixNumber(prismLuckInput.value) * (prismLuckBoost.checked ? 2.0 : 1.0);
     const prismTotalRps = prismFinalSpeed * prismFinalBulk;
 
+    // 3. Calculate Halloween Stats
+    let rawHallowSpeedSec = parseFloat(halloweenSpeedInput?.value || 1);
+    if (isNaN(rawHallowSpeedSec) || rawHallowSpeedSec < 0.05) rawHallowSpeedSec = 0.05;
+    let hallowFinalSpeed = (1 / rawHallowSpeedSec) * (halloweenSpeedBoost?.checked ? 2.0 : 1.0);
+    let hallowFinalBulk = parseSuffixNumber(halloweenBulkInput?.value) * (halloweenBulkBoost?.checked ? 2.0 : 1.0);
+    let hallowFinalLuck = parseSuffixNumber(halloweenLuckInput?.value) * (halloweenLuckBoost?.checked ? 2.0 : 1.0);
+    const hallowTotalRps = hallowFinalSpeed * hallowFinalBulk;
+
     // Update RPS Displays
     if (rpsOutput) rpsOutput.innerText = formatSuffixNumber(runeTotalRps);
     if (prismRpsOutput) prismRpsOutput.innerText = formatSuffixNumber(prismTotalRps);
+    if (halloweenRpsOutput) halloweenRpsOutput.innerText = formatSuffixNumber(hallowTotalRps);
 
     if (!activeRealm || !activeCategory || !gameData[activeRealm] || !gameData[activeRealm][activeCategory]) {
         if (runeResultContainer) runeResultContainer.innerHTML = "";
@@ -626,9 +691,9 @@ function calculate() {
     const itemsList = gameData[activeRealm][activeCategory];
     if (!itemsList || itemsList.length === 0) return;
 
-    // Determine if selected category is a Prism category
-    const isPrismCategory = activeCategory.toLowerCase().includes("prism");
-    const shouldHideInstant = isPrismCategory
+    const shouldHideInstant = isSpookyCategory
+        ? (halloweenHideInstantToggle ? halloweenHideInstantToggle.checked : false)
+        : isPrismCategory
         ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
         : (hideInstantToggle ? hideInstantToggle.checked : false);
 
@@ -637,8 +702,18 @@ function calculate() {
     itemsList.forEach(item => {
         const isNoobinial = item.type.toLowerCase().includes("noobinial");
 
-        const currentLuck = isPrismCategory ? prismFinalLuck : runeFinalLuck;
-        const currentRps = isPrismCategory ? prismTotalRps : runeTotalRps;
+        // Pick current luck and RPS based on active category type
+        let currentLuck, currentRps;
+        if (isSpookyCategory) {
+            currentLuck = hallowFinalLuck;
+            currentRps = hallowTotalRps;
+        } else if (isPrismCategory) {
+            currentLuck = prismFinalLuck;
+            currentRps = prismTotalRps;
+        } else {
+            currentLuck = runeFinalLuck;
+            currentRps = runeTotalRps;
+        }
 
         const effectiveLuck = isNoobinial ? 1.0 : (currentLuck > 0 ? currentLuck : 1.0);
         const rawBaseOdds = parseSuffixNumber(item.baseOdds);
@@ -762,6 +837,13 @@ function calculate() {
 }
 
 // Event Listeners - Runes
+[halloweenSpeedInput, halloweenSpeedBoost, halloweenBulkInput, halloweenBulkBoost, halloweenLuckInput, halloweenLuckBoost, halloweenHideInstantToggle].forEach(el => {
+    if (el) {
+        el.addEventListener("input", calculate);
+        el.addEventListener("change", calculate);
+    }
+});
+
 if (hideInstantToggle) hideInstantToggle.addEventListener("change", calculate);
 [speedInput, speedBoost, bulkInput, bulkBoost, luckInput, luckBoost].forEach(el => {
     if (el) {
