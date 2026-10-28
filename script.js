@@ -490,6 +490,17 @@ const gameData = {
             { name: "Zombie", maxLevel: "N/A", baseOdds: "500M", type: "Normal" },
             { name: "Treats", maxLevel: "N/A", baseOdds: "20B", type: "Normal" },
             { name: "Spooky", maxLevel: "N/A", baseOdds: "500B", type: "Normal" },
+        ],
+        "Pumpkin": [
+            { name: "Nightfall", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Black Cat", maxLevel: "N/A", baseOdds: "250M", type: "Normal" },
+            { name: "Raven", maxLevel: "N/A", baseOdds: "50B", type: "Normal" },
+            { name: "Pumpkin", maxLevel: "N/A", baseOdds: "10T", type: "Normal" },
+            { name: "Tombstone", maxLevel: "N/A", baseOdds: "1.25Qd", type: "Normal" },
+            { name: "Graveyard", maxLevel: "N/A", baseOdds: "35Qd", type: "Normal" },
+            { name: "Coven", maxLevel: "N/A", baseOdds: "1Qn", type: "Normal" },
+            { name: "Cobweb", maxLevel: "N/A", baseOdds: "20Qn", type: "Normal" },
+            { name: "Scarecrow", maxLevel: "N/A", baseOdds: "400Qn", type: "Normal" },
         ]
     }
 };
@@ -643,16 +654,16 @@ const standardPrismMetrics = document.getElementById("standardPrismMetrics");
 const halloweenMetrics = document.getElementById("halloweenMetrics");
 
 function calculate() {
-    const isSpookyCategory = activeCategory.toLowerCase() === "spooky";
+    const isHalloweenCategory = ["spooky", "pumpkin"].includes(activeCategory.toLowerCase());
     const isPrismCategory = activeCategory.toLowerCase().includes("prism");
 
     // Toggle Input Panel Visibility
-    if (standardControls) standardControls.style.display = isSpookyCategory ? "none" : "block";
-    if (halloweenControls) halloweenControls.style.display = isSpookyCategory ? "block" : "none";
+    if (standardControls) standardControls.style.display = isHalloweenCategory ? "none" : "block";
+    if (halloweenControls) halloweenControls.style.display = isHalloweenCategory ? "block" : "none";
 
     // Toggle Metric Box Visibility
-    if (standardPrismMetrics) standardPrismMetrics.style.display = isSpookyCategory ? "none" : "block";
-    if (halloweenMetrics) halloweenMetrics.style.display = isSpookyCategory ? "block" : "none";
+    if (standardPrismMetrics) standardPrismMetrics.style.display = isHalloweenCategory ? "none" : "block";
+    if (halloweenMetrics) halloweenMetrics.style.display = isHalloweenCategory ? "block" : "none";
 
     // 1. Calculate Standard Rune Stats
     let rawSpeedSec = parseFloat(speedInput.value);
@@ -691,7 +702,7 @@ function calculate() {
     const itemsList = gameData[activeRealm][activeCategory];
     if (!itemsList || itemsList.length === 0) return;
 
-    const shouldHideInstant = isSpookyCategory
+    const shouldHideInstant = isHalloweenCategory
         ? (halloweenHideInstantToggle ? halloweenHideInstantToggle.checked : false)
         : isPrismCategory
         ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
@@ -704,7 +715,7 @@ function calculate() {
 
         // Pick current luck and RPS based on active category type
         let currentLuck, currentRps;
-        if (isSpookyCategory) {
+        if (isHalloweenCategory) {
             currentLuck = hallowFinalLuck;
             currentRps = hallowTotalRps;
         } else if (isPrismCategory) {
