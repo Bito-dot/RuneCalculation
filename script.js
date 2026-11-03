@@ -507,6 +507,17 @@ const gameData = {
             { name: "Coffin", maxLevel: "N/A", baseOdds: "6.5Qn", type: "Noobinial" },
             { name: "Witch Fire", maxLevel: "N/A", baseOdds: "5Sx", type: "Noobinial" },
             { name: "Ghost Rider", maxLevel: "N/A", baseOdds: "25Sp", type: "Noobinial" },
+        ],
+        "Witch": [
+            { name: "Broomstick", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Cauldron", maxLevel: "N/A", baseOdds: "100T", type: "Normal" },
+            { name: "Hex Dust", maxLevel: "N/A", baseOdds: "200Sx", type: "Normal" },
+            { name: "Nightbrew", maxLevel: "N/A", baseOdds: "400No", type: "Normal" },
+            { name: "Crow", maxLevel: "N/A", baseOdds: "10UDe", type: "Normal" },
+            { name: "Spellbound", maxLevel: "N/A", baseOdds: "2.5DDe", type: "Normal" },
+            { name: "Moonhex", maxLevel: "N/A", baseOdds: "30DDe", type: "Normal" },
+            { name: "Spellbook", maxLevel: "N/A", baseOdds: "240DDe", type: "Normal" },
+            { name: "Covenmist", maxLevel: "N/A", baseOdds: "1.75TDe", type: "Normal" },
         ]
     }
 };
@@ -660,7 +671,7 @@ const standardPrismMetrics = document.getElementById("standardPrismMetrics");
 const halloweenMetrics = document.getElementById("halloweenMetrics");
 
 function calculate() {
-    const isHalloweenCategory = ["spooky", "pumpkin"].includes(activeCategory.toLowerCase());
+    const isHalloweenCategory = ["spooky", "pumpkin", "witch"].includes(activeCategory.toLowerCase());
     const isPrismCategory = activeCategory.toLowerCase().includes("prism");
 
     // Toggle Input Panel Visibility
