@@ -493,6 +493,7 @@ const gameData = {
             { name: "Revenant", maxLevel: "N/A", baseOdds: "333Qd", type: "Noobinial" },
             { name: "Lich", maxLevel: "N/A", baseOdds: "125Qn", type: "Noobinial" },
             { name: "Necromancer", maxLevel: "N/A", baseOdds: "250Sx", type: "Noobinial" },
+            { name: "Banshee", maxLevel: "N/A", baseOdds: "5UDe", type: "Noobinial" }
         ],
         "Pumpkin": [
             { name: "Nightfall", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
@@ -507,6 +508,7 @@ const gameData = {
             { name: "Coffin", maxLevel: "N/A", baseOdds: "6.5Qn", type: "Noobinial" },
             { name: "Witch Fire", maxLevel: "N/A", baseOdds: "5Sx", type: "Noobinial" },
             { name: "Ghost Rider", maxLevel: "N/A", baseOdds: "25Sp", type: "Noobinial" },
+            { name: "Headless Horseman", maxLevel: "N/A", baseOdds: "200DDe", type: "Noobinial" }
         ],
         "Witch": [
             { name: "Broomstick", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
@@ -518,6 +520,9 @@ const gameData = {
             { name: "Moonhex", maxLevel: "N/A", baseOdds: "30DDe", type: "Normal" },
             { name: "Spellbook", maxLevel: "N/A", baseOdds: "240DDe", type: "Normal" },
             { name: "Covenmist", maxLevel: "N/A", baseOdds: "1.75TDe", type: "Normal" },
+            { name: "Hagshadow", maxLevel: "N/A", baseOdds: "75De", type: "Noobinial" },
+            { name: "Witchbane", maxLevel: "N/A", baseOdds: "750UDe", type: "Noobinial" },
+            { name: "Eldritch", maxLevel: "N/A", baseOdds: "150TDe", type: "Noobinial" }
         ]
     }
 };
