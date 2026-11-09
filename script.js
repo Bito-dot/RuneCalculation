@@ -133,50 +133,50 @@ function formatTime(seconds) {
 const gameData = {
     "Realm 1": {
         "Basic": [
-            { name: "Rookie", maxLevel: 500, baseOdds: 1.25, type: "Normal", maxStats: { oof: "x101", rebirth: "x10" }},
-            { name: "Learner", maxLevel: 400, baseOdds: 6.67, type: "Normal", maxStats: { rebirth: "x61", runeLuck: "x1.5" }},
-            { name: "Trained", maxLevel: 300, baseOdds: 33.29, type: "Normal", maxStats: { oof: "x151", rebirth: "x61", fire: "x46", runeBulk: "+5" }},
-            { name: "Skilled", maxLevel: 200, baseOdds: 200, type: "Normal", maxStats: { oof: "x501", fire: "x51", runeLuck: "x1.75" }},
-            { name: "Expert", maxLevel: 150, baseOdds: "50k", type: "Normal", maxStats: { oof: "x751", fire: "x114", runeSpeed: "x1.5", runeBulk: "x3" }},
-            { name: "Master", maxLevel: 115, baseOdds: "1M", type: "Normal", maxStats: { oof: "x1.73k", rebirth: "x576", fire: "x116", blaze: "x24", runeBulk: "+10" }},
-            { name: "Grandmaster", maxLevel: 95, baseOdds: "40M", type: "Normal", maxStats: { oof: "x4.75k", rebirth: "x72.3", runeSpeed: "x1.5", runeBulk: "x4" }},
-            { name: "Celestial", maxLevel: 75, baseOdds: "625B", type: "Normal", maxStats: { oof: "x56.3k", fire: "x1.12k", rebirth: "x5.63k", blaze: "x151", runeBulk: "x21", runeLuck: "x4" }},
-            { name: "Immortal", maxLevel: 50, baseOdds: "500Sp", type: "Normal", maxStats: { oof: "x125k", fire: "x2.5k", rebirth: "x12.5k", blaze: "x251", runeBulk: "x31" , runeLuck: "x6" }},
-            { name: "Shadow", maxLevel: 5, baseOdds: "2.5Sx", type: "Noobinial",  maxStats: { oof: "x501", blaze: "x76", prism: "x1.25", coin: "x3.5", runeBulk: "x51" , bread: "x26" }},
-            { name: "Phantom", maxLevel: 20, baseOdds: "2.5Oc", type: "Noobinial", maxStats: { oof: "20k", fire: "x1k", cash: "x2k", prism: "x1.35", runeBulk: "x501" , bread: "x101" }},
-            { name: "Atomic", maxLevel: 20, baseOdds: "300QdDe", type: "Noobinial", maxStats: { oof: "x20k", fire: "x2k", cash: "x5k", prism: "x1.25", tierLuck: "x51" , tierBulk: "x26", bread: "x101" }},
-            { name: "Chronos Core", maxLevel: 3, baseOdds: "3.5QnDe", type: "Noobinial", bg: "linear-gradient(135deg, #0f172a 0%, #312e81 40%, #0284c7 70%, #38bdf8 100%)",  maxStats: { fire: "x3k", cash: "x1.05k", prism: "x1.14", runeBulk: "x41", tierBulk: "x61", hackPoints: "x4", wheat: "x16" }}
+            { name: "Rookie", maxLevel: 500, baseOdds: 1.25, type: "Normal", maxStats: { oof: "x101", rebirth: "x10" } },
+            { name: "Learner", maxLevel: 400, baseOdds: 6.67, type: "Normal", maxStats: { rebirth: "x61", runeLuck: "x1.5" } },
+            { name: "Trained", maxLevel: 300, baseOdds: 33.29, type: "Normal", maxStats: { oof: "x151", rebirth: "x61", fire: "x46", runeBulk: "+5" } },
+            { name: "Skilled", maxLevel: 200, baseOdds: 200, type: "Normal", maxStats: { oof: "x501", fire: "x51", runeLuck: "x1.75" } },
+            { name: "Expert", maxLevel: 150, baseOdds: "50k", type: "Normal", maxStats: { oof: "x751", fire: "x114", runeSpeed: "x1.5", runeBulk: "x3" } },
+            { name: "Master", maxLevel: 115, baseOdds: "1M", type: "Normal", maxStats: { oof: "x1.73k", rebirth: "x576", fire: "x116", blaze: "x24", runeBulk: "+10" } },
+            { name: "Grandmaster", maxLevel: 95, baseOdds: "40M", type: "Normal", maxStats: { oof: "x4.75k", rebirth: "x72.3", runeSpeed: "x1.5", runeBulk: "x4" } },
+            { name: "Celestial", maxLevel: 75, baseOdds: "625B", type: "Normal", maxStats: { oof: "x56.3k", fire: "x1.12k", rebirth: "x5.63k", blaze: "x151", runeBulk: "x21", runeLuck: "x4" } },
+            { name: "Immortal", maxLevel: 50, baseOdds: "500Sp", type: "Normal", maxStats: { oof: "x125k", fire: "x2.5k", rebirth: "x12.5k", blaze: "x251", runeBulk: "x31", runeLuck: "x6" } },
+            { name: "Shadow", maxLevel: 5, baseOdds: "2.5Sx", type: "Noobinial", maxStats: { oof: "x501", blaze: "x76", prism: "x1.25", coin: "x3.5", runeBulk: "x51", bread: "x26" } },
+            { name: "Phantom", maxLevel: 20, baseOdds: "2.5Oc", type: "Noobinial", maxStats: { oof: "20k", fire: "x1k", cash: "x2k", prism: "x1.35", runeBulk: "x501", bread: "x101" } },
+            { name: "Atomic", maxLevel: 20, baseOdds: "300QdDe", type: "Noobinial", maxStats: { oof: "x20k", fire: "x2k", cash: "x5k", prism: "x1.25", tierLuck: "x51", tierBulk: "x26", bread: "x101" } },
+            { name: "Chronos Core", maxLevel: 3, baseOdds: "3.5QnDe", type: "Noobinial", bg: "linear-gradient(135deg, #0f172a 0%, #312e81 40%, #0284c7 70%, #38bdf8 100%)", maxStats: { fire: "x3k", cash: "x1.05k", prism: "x1.14", runeBulk: "x41", tierBulk: "x61", hackPoints: "x4", wheat: "x16" } }
         ],
         "Super": [
-            { name: "Initiate", maxLevel: 1500, baseOdds: 1.11, type: "Normal", maxStats: { oof: "x1.5k", fire: "x751" }},
-            { name: "Adept", maxLevel: 1500, baseOdds: 13.3, type: "Normal", maxStats: { blaze: "x976", runeBulk: "x2.5" }},
-            { name: "Veteran", maxLevel: 1500, baseOdds: 50, type: "Normal", maxStats: { oof: "x12.8k", rebirth: "x751", runeLuck: "x2.5" }},
-            { name: "Elite", maxLevel: 250, baseOdds: "5k", type: "Normal", maxStats: { rebirth: "x1.25k", cash: "x189", runeSpeed: "x1.5" }},
-            { name: "Champion", maxLevel: 175, baseOdds: "200k", type: "Normal", maxStats: { oof: "2.63k", fire: "x176", cash: "x290", runeSpeed: "x1.5" }},
-            { name: "Ascended", maxLevel: 125, baseOdds: "2M", type: "Normal", maxStats: { fire: "x251", cash: "x314", runeLuck: "x3", runeSpeed: "x1.5", runeBulk: "+3" }},
-            { name: "Transcendent", maxLevel: 100, baseOdds: "50M", type: "Normal", maxStats: { oof: "x3k", blaze: "x101", cash: "x401", runeLuck: "x3", runeBulk: "x6", coin: "x4" }},
-            { name: "Universal", maxLevel: 75, baseOdds: "20Qn", type: "Normal", maxStats: { oof: "x901", fire: "x1.12k", cash: "x901", runeLuck: "x4.5", runeBulk: "x8.5", tierLuck: "x51", coin: "x5.5" }},
-            { name: "Omnipotent", maxLevel: 50, baseOdds: "12.5Oc", type: "Normal", maxStats: { blaze: "x2k", fire: "x2.25k", cash: "x2k", runeLuck: "x7", runeBulk: "x16" }},
-            { name: "Eclipse", maxLevel: 10, baseOdds: "250Sx", type: "Noobinial", maxStats: { oof: "x1k", fire: "x251", prism: "x1.25", runeBulk: "x101", bread: "x51" }},
-            { name: "Void", maxLevel: 25, baseOdds: "2.5No", type: "Noobinial", maxStats: { oof: "x25k", blaze: "x626", cash: "x2.5k", prism: "x1.35", runeLuck: "x3", runeBulk: "1k", bread: "x126" }},
-            { name: "Primordial", maxLevel: 25, baseOdds: "5UDe", type: "Noobinial", maxStats: { oof: "x25k", rebirth: "x12.5k", fire: "2.5k", tierLuck: "x51", prismRuneSpeed: "x3.5", tierBulk: "x13.5", wheat: "x126", bread: "x76" }},
-            { name: "Oblivion Sigil", maxLevel: 10, baseOdds: "300QnDe", type: "Noobinial", maxStats: { oof: "x1M", tierLuck: "x201", prismRuneSpeed: "x2.5", prism: "x1.1", runeSpeed: "x3", tierBulk: "x151", wheat: "x31", coin: "x3.5" }}
+            { name: "Initiate", maxLevel: 1500, baseOdds: 1.11, type: "Normal", maxStats: { oof: "x1.5k", fire: "x751" } },
+            { name: "Adept", maxLevel: 1500, baseOdds: 13.3, type: "Normal", maxStats: { blaze: "x976", runeBulk: "x2.5" } },
+            { name: "Veteran", maxLevel: 1500, baseOdds: 50, type: "Normal", maxStats: { oof: "x12.8k", rebirth: "x751", runeLuck: "x2.5" } },
+            { name: "Elite", maxLevel: 250, baseOdds: "5k", type: "Normal", maxStats: { rebirth: "x1.25k", cash: "x189", runeSpeed: "x1.5" } },
+            { name: "Champion", maxLevel: 175, baseOdds: "200k", type: "Normal", maxStats: { oof: "2.63k", fire: "x176", cash: "x290", runeSpeed: "x1.5" } },
+            { name: "Ascended", maxLevel: 125, baseOdds: "2M", type: "Normal", maxStats: { fire: "x251", cash: "x314", runeLuck: "x3", runeSpeed: "x1.5", runeBulk: "+3" } },
+            { name: "Transcendent", maxLevel: 100, baseOdds: "50M", type: "Normal", maxStats: { oof: "x3k", blaze: "x101", cash: "x401", runeLuck: "x3", runeBulk: "x6", coin: "x4" } },
+            { name: "Universal", maxLevel: 75, baseOdds: "20Qn", type: "Normal", maxStats: { oof: "x901", fire: "x1.12k", cash: "x901", runeLuck: "x4.5", runeBulk: "x8.5", tierLuck: "x51", coin: "x5.5" } },
+            { name: "Omnipotent", maxLevel: 50, baseOdds: "12.5Oc", type: "Normal", maxStats: { blaze: "x2k", fire: "x2.25k", cash: "x2k", runeLuck: "x7", runeBulk: "x16" } },
+            { name: "Eclipse", maxLevel: 10, baseOdds: "250Sx", type: "Noobinial", maxStats: { oof: "x1k", fire: "x251", prism: "x1.25", runeBulk: "x101", bread: "x51" } },
+            { name: "Void", maxLevel: 25, baseOdds: "2.5No", type: "Noobinial", maxStats: { oof: "x25k", blaze: "x626", cash: "x2.5k", prism: "x1.35", runeLuck: "x3", runeBulk: "1k", bread: "x126" } },
+            { name: "Primordial", maxLevel: 25, baseOdds: "5UDe", type: "Noobinial", maxStats: { oof: "x25k", rebirth: "x12.5k", fire: "2.5k", tierLuck: "x51", prismRuneSpeed: "x3.5", tierBulk: "x13.5", wheat: "x126", bread: "x76" } },
+            { name: "Oblivion Sigil", maxLevel: 10, baseOdds: "300QnDe", type: "Noobinial", maxStats: { oof: "x1M", tierLuck: "x201", prismRuneSpeed: "x2.5", prism: "x1.1", runeSpeed: "x3", tierBulk: "x151", wheat: "x31", coin: "x3.5" } }
         ],
         "Advanced": [
-            { name: "Little", maxLevel: 600, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1.2k", wheat: "x3.5" }},
-            { name: "Lesser", maxLevel: 500, baseOdds: "100k", type: "Normal", maxStats: { cash: "x251", rebirth: "x251", wheat: "x6" }},
-            { name: "Standard", maxLevel: 400, baseOdds: "1M", type: "Normal", maxStats: { fire: "x201", cash: "x801", oof: "2k", bread: "x3.5" }},
-            { name: "Greater", maxLevel: 300, baseOdds: "50M", type: "Normal", maxStats: { fire: "x451", rebirth: "x601", blaze: "x31", wheat: "x6" }},
-            { name: "Superior", maxLevel: 200, baseOdds: "200M", type: "Normal", maxStats: { cash: "x601", oof: "x2k", bread: "x11" }},
-            { name: "Prime", maxLevel: 150, baseOdds: "100B", type: "Normal", maxStats: { cash: "x751", rebirth: "x1.5k", blaze: "x76", runeLuck: "x2.5", wheat: "x16" }},
-            { name: "Apex", maxLevel: 125, baseOdds: "1T", type: "Normal", maxStats: { fire: "x501", cash: "x939", oof: "x2.5k", runeBulk: "x4", runeLuck: "x3", bread: "x11" }},
-            { name: "Ethereal", maxLevel: 100, baseOdds: "50T", type: "Normal", maxStats: { cash: "x1k", oof: "x2.75k", rebirth: "x3k", blaze: "x101", runeLuck: "x4", bread: "x16" }},
-            { name: "Divine", maxLevel: 75, baseOdds: "200Qd", type: "Normal", maxStats: { fire: "x601", cash: "x939", oof: "2.63k", blaze: "x151", coin: "x5", runeBulk: "x7", runeLuck: "x5"}},
-            { name: "Infinite", maxLevel: 50, baseOdds: "17.5Oc", type: "Normal", maxStats: { oof: "x2.5k", rebirth: "x2k", fire: "x501", cash: "x751", blaze: "x151", runeBulk: "x11", runeLuck: "x6", bread: "x26" }},
-            { name: "Abyss", maxLevel: 15 ,baseOdds: "25Sp", type: "Noobinial", maxStats: { oof: "x1.5k", cash: "x601", prism: "x1.25", runeLuck: "x3", runeBulk: "x189", bread: "x76" }},
-            { name: "Enigma", maxLevel: 30, baseOdds: "2.5De", type: "Noobinial", maxStats: { oof: "x30k", fire: "x1.5k", blaze: "x751", prism: "x1.35", runeBulk: "x2.5k", bread: "x151" }},
-            { name: "Seraphim's Tear", maxLevel: 6, baseOdds: "100TDe", type: "Noobinial", maxStats: { oof: "x60k", rebirth: "x3k", fire: "x601", tierLuck: "x19", tierBulk: "x13", wheat: "x31", bread: "x19" }},
-            { name: "Aetherion", maxLevel: 4, baseOdds: "12.5SxDe", type: "Noobinial", maxStats: { oof: "x40k", fire: "x4k", hackPoints: "x3", prism: "x1.14", tierBulk: "x101", tierLuck: "x61", coin: "x5" }}
+            { name: "Little", maxLevel: 600, baseOdds: 1.01, type: "Normal", maxStats: { oof: "x1.2k", wheat: "x3.5" } },
+            { name: "Lesser", maxLevel: 500, baseOdds: "100k", type: "Normal", maxStats: { cash: "x251", rebirth: "x251", wheat: "x6" } },
+            { name: "Standard", maxLevel: 400, baseOdds: "1M", type: "Normal", maxStats: { fire: "x201", cash: "x801", oof: "2k", bread: "x3.5" } },
+            { name: "Greater", maxLevel: 300, baseOdds: "50M", type: "Normal", maxStats: { fire: "x451", rebirth: "x601", blaze: "x31", wheat: "x6" } },
+            { name: "Superior", maxLevel: 200, baseOdds: "200M", type: "Normal", maxStats: { cash: "x601", oof: "x2k", bread: "x11" } },
+            { name: "Prime", maxLevel: 150, baseOdds: "100B", type: "Normal", maxStats: { cash: "x751", rebirth: "x1.5k", blaze: "x76", runeLuck: "x2.5", wheat: "x16" } },
+            { name: "Apex", maxLevel: 125, baseOdds: "1T", type: "Normal", maxStats: { fire: "x501", cash: "x939", oof: "x2.5k", runeBulk: "x4", runeLuck: "x3", bread: "x11" } },
+            { name: "Ethereal", maxLevel: 100, baseOdds: "50T", type: "Normal", maxStats: { cash: "x1k", oof: "x2.75k", rebirth: "x3k", blaze: "x101", runeLuck: "x4", bread: "x16" } },
+            { name: "Divine", maxLevel: 75, baseOdds: "200Qd", type: "Normal", maxStats: { fire: "x601", cash: "x939", oof: "2.63k", blaze: "x151", coin: "x5", runeBulk: "x7", runeLuck: "x5" } },
+            { name: "Infinite", maxLevel: 50, baseOdds: "17.5Oc", type: "Normal", maxStats: { oof: "x2.5k", rebirth: "x2k", fire: "x501", cash: "x751", blaze: "x151", runeBulk: "x11", runeLuck: "x6", bread: "x26" } },
+            { name: "Abyss", maxLevel: 15, baseOdds: "25Sp", type: "Noobinial", maxStats: { oof: "x1.5k", cash: "x601", prism: "x1.25", runeLuck: "x3", runeBulk: "x189", bread: "x76" } },
+            { name: "Enigma", maxLevel: 30, baseOdds: "2.5De", type: "Noobinial", maxStats: { oof: "x30k", fire: "x1.5k", blaze: "x751", prism: "x1.35", runeBulk: "x2.5k", bread: "x151" } },
+            { name: "Seraphim's Tear", maxLevel: 6, baseOdds: "100TDe", type: "Noobinial", maxStats: { oof: "x60k", rebirth: "x3k", fire: "x601", tierLuck: "x19", tierBulk: "x13", wheat: "x31", bread: "x19" } },
+            { name: "Aetherion", maxLevel: 4, baseOdds: "12.5SxDe", type: "Noobinial", maxStats: { oof: "x40k", fire: "x4k", hackPoints: "x3", prism: "x1.14", tierBulk: "x101", tierLuck: "x61", coin: "x5" } }
         ],
         "Hacker": [
             { name: "Script", maxLevel: 600, baseOdds: 1.01, type: "Normal", maxStats: { hackPoints: "x7.5", oof: "x1.2k", wheat: "x4" } },
@@ -245,7 +245,7 @@ const gameData = {
             { name: "Stalagmite", maxLevel: 150, baseOdds: "200Sp", type: "Normal", maxStats: { oof: "x601", oreDamage: "x1.14", gems: "x2.5", fire: "x38.5", ice: "x81" } },
             { name: "Cavern", maxLevel: 115, baseOdds: "50Oc", type: "Normal", maxStats: { oof: "x864", gems: "x2.5", water: "x38", runeLuck: "x2" } },
             { name: "Crystalborn", maxLevel: 95, baseOdds: "10No", type: "Normal", maxStats: { oreDamage: "x1.14", oreStats: "x2", ice: "x24.8", runeLuck: "x2.25" } },
-            { name: "Earthshaker", maxLevel: 75, baseOdds:"10De", type:"Normal", maxStats: { gems: "x57.3", oreDamage: "x2.5", runeBulk: "x6", runeSpeed: "x2" } },
+            { name: "Earthshaker", maxLevel: 75, baseOdds: "10De", type: "Normal", maxStats: { gems: "x57.3", oreDamage: "x2.5", runeBulk: "x6", runeSpeed: "x2" } },
             { name: "Golemheart", maxLevel: 50, baseOdds: "100UDe", type: "Normal", maxStats: { gems: "x126", oreDamage: "x16", oof: "x500k", runeLuck: "x6" } },
             { name: "Stone Titan", maxLevel: 15, baseOdds: "10No", type: "Noobinial", maxStats: { gems: "x46", oreStats: "x8.5", oof: "x751", oreDamage: "x2.25", tierBulk: "x46" } },
             { name: "Cave Guardian", maxLevel: 25, baseOdds: "7.5De", type: "Noobinial", maxStats: { gems: "x26", oreStats: "x16", oof: "x2.5k", runeSpeed: "x1.5", tierLuck: "x51" } },
@@ -361,9 +361,9 @@ const gameData = {
             { name: "Infinite Darkness", maxLevel: 65, baseOdds: "1TVt", type: "Normal", maxStats: { yin: "x8", stars: "x66", coin: "x4.25", bones: "x65Qd" } },
             { name: "Midnight", maxLevel: 75, baseOdds: "1TVt", type: "Normal", maxStats: { oof: "x4.75", yin: "x7", stars: "x301", coin: "x8.5" } },
             { name: "Dark Elemental", maxLevel: 100, baseOdds: "1SpVt", type: "Normal", maxStats: { oof: "x9", yin: "x4", stars: "x1k", planets: "x11" } },
-            { name: "Doomed", maxLevel: 150, baseOdds: "1UTg", type: "Normal" , maxStats: { yin: "x3", stars: "x15k", planets: "x38.5", blackholes: "x16" } },
+            { name: "Doomed", maxLevel: 150, baseOdds: "1UTg", type: "Normal", maxStats: { yin: "x3", stars: "x15k", planets: "x38.5", blackholes: "x16" } },
             { name: "Destruction", maxLevel: 200, baseOdds: "1.0e108", type: "Normal", maxStats: { planets: "x151", yin: "x50", oof: "x21", stars: "x400k", blackholes: "x51" } },
-            { name: "Demonic Evil", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: {stars: "x25M", blackholes: "x251", oof: "x51", yin: "x100", planets: "x751", coin: "x126", runeBulk: "x1.1", tierLuck: "x51" } },
+            { name: "Demonic Evil", maxLevel: 250, baseOdds: "1.0e120", type: "Normal", maxStats: { stars: "x25M", blackholes: "x251", oof: "x51", yin: "x100", planets: "x751", coin: "x126", runeBulk: "x1.1", tierLuck: "x51" } },
             { name: "Absolute Darkness", maxLevel: 100, baseOdds: "2.5SpVt", type: "Noobinial", maxStats: { oof: "x1k", yin: "x100", chips: "x7.5", knowledge: "x1k", tierLuck: "x101", tierBulk: "x26", runeBulk: "x2", runeLuck: "x7.5" } },
             { name: "Dark Genesis", maxLevel: 75, baseOdds: "50SpVt", type: "Noobinial", maxStats: { oof: "x1.88k", yin: "x100", chips: "x2", prism: "x1.2", tierLuck: "x57.3", tierBulk: "x12.2", runeBulk: "x2.5", runeLuck: "x10" } },
             { name: "Ultimate Darkness", maxLevel: 200, baseOdds: "25OcVt", type: "Noobinial", maxStats: { oof: "x201", yin: "x201", coin: "x10k", prism: "x1.14", tierLuck: "x201", tierBulk: "x21", runeBulk: "x1.4", runeLuck: "x10" } }
@@ -377,7 +377,7 @@ const gameData = {
             { name: "Lake", maxLevel: 250, baseOdds: "10Sx", type: "Normal", maxStats: { coral: "x6" } },
             { name: "River", maxLevel: 250, baseOdds: "1No", type: "Normal", maxStats: { bubbles: "x16" } },
             { name: "Pool", maxLevel: 250, baseOdds: "10DDe", type: "Normal", maxStats: { air: "x11", coral: "x11" } },
-            { name: "Sea", maxLevel: 250, baseOdds: "10SxDe", type: "Normal", maxStats: { bubbles:"x26" } },
+            { name: "Sea", maxLevel: 250, baseOdds: "10SxDe", type: "Normal", maxStats: { bubbles: "x26" } },
             { name: "Ocean", maxLevel: 250, baseOdds: "100NoDe", type: "Normal", maxStats: { bubbles: "x101" } },
             { name: "Deep Sea", maxLevel: 250, baseOdds: "10UVt", type: "Normal", maxStats: { bubbles: "x251" } },
             { name: "Tidal Wave", maxLevel: 250, baseOdds: "3.5OcVt", type: "Noobinial", maxStats: { oof: "x2.5k", bubbles: "x1.25k", air: "x501", coral: "x501", yin: "x1k", runeLuck: "x5", runeBulk: "x10", prism: "x1.02" } },
@@ -449,7 +449,7 @@ const gameData = {
             { name: "Solar Crown", maxLevel: "N/A", baseOdds: "1TQg", type: "Normal" },
             { name: "Beyond the Stars", maxLevel: "N/A", baseOdds: "9.75DTg", type: "Noobinial" },
             { name: "Beyond the Galaxy", maxLevel: "N/A", baseOdds: "35DTg", type: "Noobinial" },
-            { name: "Beyond the Universe", maxLevel: "N/A", baseOdds: "35TTg", type: "Noobinial" }
+            { name: "Beyond the Multiverse", maxLevel: "N/A", baseOdds: "35TTg", type: "Noobinial" }
         ],
         "Zeus": [
             { name: "Bolt", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
@@ -463,6 +463,7 @@ const gameData = {
             { name: "Olympian", maxLevel: "N/A", baseOdds: "20QdQg", type: "Normal" },
             { name: "Thunder Lord", maxLevel: "N/A", baseOdds: "3.5TTg", type: "Noobinial" },
             { name: "Eternal Thunder", maxLevel: "N/A", baseOdds: "150TTg", type: "Noobinial" },
+            { name: "Godlike Lightning", maxLevel: "N/A", baseOdds: "100QdTg", type: "Noobinial" }
         ]
     },
     "Events": {
@@ -679,11 +680,13 @@ function calculate() {
     const isHalloweenCategory = ["spooky", "pumpkin", "witch"].includes(activeCategory.toLowerCase());
     const isPrismCategory = activeCategory.toLowerCase().includes("prism");
 
-    // Toggle Input Panel Visibility
+    // Toggle Dynamic Halloween Background
+    document.body.classList.toggle("halloween-active", isHalloweenCategory);
+
+    // Toggle Input Panel & Metric Box Visibility
     if (standardControls) standardControls.style.display = isHalloweenCategory ? "none" : "block";
     if (halloweenControls) halloweenControls.style.display = isHalloweenCategory ? "block" : "none";
 
-    // Toggle Metric Box Visibility
     if (standardPrismMetrics) standardPrismMetrics.style.display = isHalloweenCategory ? "none" : "block";
     if (halloweenMetrics) halloweenMetrics.style.display = isHalloweenCategory ? "block" : "none";
 
@@ -727,8 +730,8 @@ function calculate() {
     const shouldHideInstant = isHalloweenCategory
         ? (halloweenHideInstantToggle ? halloweenHideInstantToggle.checked : false)
         : isPrismCategory
-        ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
-        : (hideInstantToggle ? hideInstantToggle.checked : false);
+            ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
+            : (hideInstantToggle ? hideInstantToggle.checked : false);
 
     let htmlOutput = "";
 

@@ -1,8 +1,13 @@
 body {
-    background: linear-gradient(to bottom, #ff6b00 0%, #3b0764 100%) !important;
-    background-attachment: fixed;
-    min-height: 100vh;
+    background: #121212; 
     color: #fff;
+    min-height: 100vh;
+    background-attachment: fixed;
+    transition: background 0.3s ease;
+}
+
+body.halloween-active {
+    background: linear-gradient(to bottom, #ff6b00 0%, #3b0764 100%) !important;
 }
 
 .container {
