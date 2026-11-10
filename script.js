@@ -195,6 +195,21 @@ const gameData = {
             { name: "Anti-Cheat", maxLevel: 200, baseOdds: "2OcVt", type: "Normal", maxStats: { hackPoints: "x4k", souls: "x7", cash: "x401", meat: "x3.5", coin: "x11", runeLuck: "x1.25", prism: "x1.05", runeBulk: "x1.25" } },
             { name: "Unstoppable Virus", maxLevel: 40, baseOdds: "1DVt", type: "Noobinial", maxStats: { oof: "x21", hackPoints: "x51", souls: "x81", tierLuck: "x11", prism: "x1.3", runeBulk: "x1.25", prismRuneBulk: "x1.75", prismRuneLuck: "x21" } }
         ],
+        "Pro Hacker": [
+            { name: "Network", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
+            { name: "Security", maxLevel: "N/A", baseOdds: "1NoVt", type: "Normal" },
+            { name: "WLAN", maxLevel: "N/A", baseOdds: "100QnTg", type: "Normal" },
+            { name: "Cryptography", maxLevel: "N/A", baseOdds: "10Dqg", type: "Normal" },
+            { name: "Encryption", maxLevel: "N/A", baseOdds: "1Noqg", type: "Normal" },
+            { name: "Decryption", maxLevel: "N/A", baseOdds: "10QnQg", type: "Normal" },
+            { name: "Ceasar", maxLevel: "N/A", baseOdds: "1.5SpQg", type: "Normal" },
+            { name: "Affine", maxLevel: "N/A", baseOdds: "10SpQg", type: "Normal" },
+            { name: "Hill", maxLevel: "N/A", baseOdds: "75SpQg", type: "Normal" },
+            { name: "Brute Force", maxLevel: "N/A", baseOdds: "5QnTg", type: "Noobinial" },
+            { name: "DDOS Attack", maxLevel: "N/A", baseOdds: "20QnTg", type: "Noobinial" },
+            { name: "SQL Injection", maxLevel: "N/A", baseOdds: "100QnTg", type: "Noobinial" },
+            { name: "Unstoppable Hacker", maxLevel: "N/A", baseOdds: "500QnTg", type: "Noobinial" },
+        ],
         "Cosmic Prism": [
             { name: "Lucent", maxLevel: 5000, baseOdds: 2.5, type: "Prism", maxStats: { oof: "x57.3k", cash: "x57.3k", bread: "x1.14k" } },
             { name: "Chroma", maxLevel: 4500, baseOdds: 4, type: "Prism", maxStats: { oof: "x370k", tierBulk: "x16", runeBulk: "x11" } },
