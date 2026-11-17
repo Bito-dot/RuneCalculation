@@ -479,6 +479,19 @@ const gameData = {
             { name: "Thunder Lord", maxLevel: "N/A", baseOdds: "3.5TTg", type: "Noobinial" },
             { name: "Eternal Thunder", maxLevel: "N/A", baseOdds: "150TTg", type: "Noobinial" },
             { name: "Godlike Lightning", maxLevel: "N/A", baseOdds: "100QdTg", type: "Noobinial" }
+        ],
+        "Colosseum": [
+            { name: "Strength", maxLevel: "N/A", baseOdds: 1.01, type: "Normal"  },
+            { name: "Health", maxLevel: "N/A", baseOdds: "10QdTg", type: "Normal" },
+            { name: "Mobility", maxLevel: "N/A", baseOdds: "15Dqg", type: "Normal" },
+            { name: "Defence", maxLevel: "N/A", baseOdds: "22.5Qg", type: "Normal" },
+            { name: "Combat", maxLevel: "N/A", baseOdds: "35OcQg", type: "Normal" },
+            { name: "Battle", maxLevel: "N/A", baseOdds: "2.75NoQg", type: "Normal" },
+            { name: "Showdown", maxLevel: "N/A", baseOdds: "200NoQg", type: "Normal" },
+            { name: "Powerful Chakra", maxLevel: "N/A", baseOdds: "7.5SxTg", type: "Noobinial" },
+            { name: "Powerful Aura", maxLevel: "N/A", baseOdds: "50SxTg", type: "Noobinial" },
+            { name: "Powerful Duelist", maxLevel: "N/A", baseOdds: "350SxTg", type: "Noobinial" },
+            { name: "Powerful Champion", maxLevel: "N/A", baseOdds: "2SpTg", type: "Noobinial" }
         ]
     },
     "Events": {
