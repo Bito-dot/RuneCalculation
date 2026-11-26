@@ -10,6 +10,10 @@ body.halloween-active {
     background: linear-gradient(to bottom, #ff6b00 0%, #3b0764 100%) !important;
 }
 
+body.thanksgiving-active {
+    background: linear-gradient(to bottom, #d97706 0%, #7c2d12 100%) !important;
+}
+
 .container {
   max-width: 1200px; /* Expanded width to maximize screen space */
   margin: 0 auto;

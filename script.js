@@ -481,7 +481,7 @@ const gameData = {
             { name: "Godlike Lightning", maxLevel: "N/A", baseOdds: "100QdTg", type: "Noobinial" }
         ],
         "Colosseum": [
-            { name: "Strength", maxLevel: "N/A", baseOdds: 1.01, type: "Normal"  },
+            { name: "Strength", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
             { name: "Health", maxLevel: "N/A", baseOdds: "10QdTg", type: "Normal" },
             { name: "Mobility", maxLevel: "N/A", baseOdds: "15Dqg", type: "Normal" },
             { name: "Defence", maxLevel: "N/A", baseOdds: "22.5Qg", type: "Normal" },
@@ -510,48 +510,70 @@ const gameData = {
             { name: "Iconic", maxLevel: 20, baseOdds: "2.5Sp", type: "Noobinial", maxStats: { goals: "x36", oreDamage: "x2", gems: "x2", oreStats: "x3", prism: "x1.2", footballRuneBulk: "x5" } }
         ],
         "Spooky": [
-            { name: "Creepy", maxLevel: "N/A", baseOdds: 1.11, type: "Normal" },
-            { name: "Haunted", maxLevel: "N/A", baseOdds: 10, type: "Normal" },
-            { name: "Ghastly", maxLevel: "N/A", baseOdds: "5k", type: "Normal" },
-            { name: "Wicked", maxLevel: "N/A", baseOdds: "75k", type: "Normal" },
-            { name: "Cursed", maxLevel: "N/A", baseOdds: "1M", type: "Normal" },
-            { name: "Spectral", maxLevel: "N/A", baseOdds: "15M", type: "Normal" },
-            { name: "Zombie", maxLevel: "N/A", baseOdds: "500M", type: "Normal" },
-            { name: "Treats", maxLevel: "N/A", baseOdds: "20B", type: "Normal" },
-            { name: "Spooky", maxLevel: "N/A", baseOdds: "500B", type: "Normal" },
-            { name: "Revenant", maxLevel: "N/A", baseOdds: "333Qd", type: "Noobinial" },
-            { name: "Lich", maxLevel: "N/A", baseOdds: "125Qn", type: "Noobinial" },
-            { name: "Necromancer", maxLevel: "N/A", baseOdds: "250Sx", type: "Noobinial" },
-            { name: "Banshee", maxLevel: "N/A", baseOdds: "5UDe", type: "Noobinial" }
+            { name: "Creepy", maxLevel: "155M", baseOdds: 1.11, type: "Normal", maxStats: { ghost: "x31M" } },
+            { name: "Haunted", maxLevel: "60M", baseOdds: 10, type: "Normal", maxStats: { spookyOof: "x15M" } },
+            { name: "Ghastly", maxLevel: "35M", baseOdds: "5k", type: "Normal", maxStats: { candyCorn: "x2", ghost: "x70M" } },
+            { name: "Wicked", maxLevel: "185M", baseOdds: "75k", type: "Normal", maxStats: { halloweenLuck: "x2", halloweenBulk: "+10", spookyOof: "x74M" } },
+            { name: "Cursed", maxLevel: "550M", baseOdds: "1M", type: "Normal", maxStats: { spookyOof: "x440M", ghost: "x27.5M", halloweenBulk: "+25" } },
+            { name: "Spectral", maxLevel: "1.6B", baseOdds: "15M", type: "Normal", maxStats: { spookyOof: "x2.4B", candyCorn: "x1.3" } },
+            { name: "Zombie", maxLevel: "4.5B", baseOdds: "500M", type: "Normal", maxStats: { spookyOof: "x3.38B", ghost: "x1.12B", halloweenBulk: "+50" } },
+            { name: "Treats", maxLevel: "14B", baseOdds: "20B", type: "Normal", maxStats: { spookyOof: "x7B", ghost: "x14B", halloweenBulk: "+100" } },
+            { name: "Spooky", maxLevel: "37.5B", baseOdds: "500B", type: "Normal", maxStats: { spookyOof: "x46.9B", ghost: "x28.1B", halloweenBulk: "+125", halloweenLuck: "x1.5" } },
+            { name: "Revenant", maxLevel: "65T", baseOdds: "333Qd", type: "Noobinial", maxStats: { spookyOof: "x195T", ghost: "x65T", candyCorn: "x1.25", halloweenBulk: "x3.5", halloweenLuck: "x1.25" } },
+            { name: "Lich", maxLevel: "17T", baseOdds: "125Qn", type: "Noobinial", maxStats: { spookyOof: "x68T", ghost: "x51T", pumpkin: "x34T", candyCorn: "x1.75", pumpkinXp: "x12.8T", halloweenBulk: "x4.5", halloweenLuck: "x1.75" } },
+            { name: "Necromancer", maxLevel: "1.5T", baseOdds: "250Sx", type: "Noobinial", maxStats: { spookyOof: "x7.5T", ghost: "x6T", pumpkin: "x4.5T", candyCorn: "x2.5", pumpkinXp: "x3T", sweets: "x1.5T", halloweenBulk: "x5.5", halloweenLuck: "x2.25" } },
+            { name: "Banshee", maxLevel: "777777", baseOdds: "5UDe", type: "Noobinial", maxStats: { spookyOof: "x7.78M", ghost: "x7.78M", pumpkin: "x5.83M", pumpkinXp: "x5.83M", sweets: "x19.39M", candyCorn: "x4.5", halloweenBulk: "x11.5", halloweenLuck: "x3" } }
         ],
         "Pumpkin": [
-            { name: "Nightfall", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Black Cat", maxLevel: "N/A", baseOdds: "250M", type: "Normal" },
-            { name: "Raven", maxLevel: "N/A", baseOdds: "50B", type: "Normal" },
-            { name: "Pumpkin", maxLevel: "N/A", baseOdds: "10T", type: "Normal" },
-            { name: "Tombstone", maxLevel: "N/A", baseOdds: "1.25Qd", type: "Normal" },
-            { name: "Graveyard", maxLevel: "N/A", baseOdds: "35Qd", type: "Normal" },
-            { name: "Coven", maxLevel: "N/A", baseOdds: "1Qn", type: "Normal" },
-            { name: "Cobweb", maxLevel: "N/A", baseOdds: "20Qn", type: "Normal" },
-            { name: "Scarecrow", maxLevel: "N/A", baseOdds: "400Qn", type: "Normal" },
-            { name: "Coffin", maxLevel: "N/A", baseOdds: "6.5Qn", type: "Noobinial" },
-            { name: "Witch Fire", maxLevel: "N/A", baseOdds: "5Sx", type: "Noobinial" },
-            { name: "Ghost Rider", maxLevel: "N/A", baseOdds: "25Sp", type: "Noobinial" },
-            { name: "Headless Horseman", maxLevel: "N/A", baseOdds: "200DDe", type: "Noobinial" }
+            { name: "Nightfall", maxLevel: "12.5M", baseOdds: 1.01, type: "Normal", maxStats: { spookyOof: "x1.88M", ghost: "x6.25M", pumpkin: "x6.25M" } },
+            { name: "Black Cat", maxLevel: "85M", baseOdds: "250M", type: "Normal", maxStats: { spookyOof: "x63.8M", pumpkin: "x21.29M" } },
+            { name: "Raven", maxLevel: "550M", baseOdds: "50B", type: "Normal", maxStats: { ghost: "x7", pumpkin: "x110M" } },
+            { name: "Pumpkin", maxLevel: "3.5B", baseOdds: "10T", type: "Normal", maxStats: { sweets: "x875M", halloweenLuck: "x1.25" } },
+            { name: "Tombstone", maxLevel: "13B", baseOdds: "1.25Qd", type: "Normal", maxStats: { sweets: "x2.6B", pumpkin: "x1.3B", pumpkinXp: "x13B", halloweenBulk: "+1k" } },
+            { name: "Graveyard", maxLevel: "45B", baseOdds: "35Qd", type: "Normal", maxStats: { sweets: "x22.5B", pumpkin: "x36B", halloweenLuck: "x1.25" } },
+            { name: "Coven", maxLevel: "160B", baseOdds: "1Qn", type: "Normal", maxStats: { sweets: "x80B", pumpkinXp: "x480B", halloweenBulk: "x1.3", halloweenLuck: "x1.3" } },
+            { name: "Cobweb", maxLevel: "315B", baseOdds: "20Qn", type: "Normal", maxStats: { spookyOof: "x315B", pumpkinXp: "x158B", pumpkin: "x394B", sweets: "x189B", halloweenBulk: "x1.75", halloweenLuck: "x1.75" } },
+            { name: "Scarecrow", maxLevel: "415B", baseOdds: "400Qn", type: "Normal", maxStats: { ghost: "x249B", pumpkinXp: "x415B", pumpkin: "x311B", sweets: "x332B", halloweenBulk: "x3", halloweenLuck: "x3" } },
+            { name: "Coffin", maxLevel: "45T", baseOdds: "6.5Qn", type: "Noobinial", maxStats: { spookyOof: "x180T", ghost: "x90T", pumpkin: "x33.79T", candyCorn: "x1.5", halloweenBulk: "x4", halloweenLuck: "x1.5" } },
+            { name: "Witch Fire", maxLevel: "7.5T", baseOdds: "5Sx", type: "Noobinial", maxStats: { spookyOof: "37.5T", ghost: "x30T", pumpkin: "x22.5T", candyCorn: "x2", pumpkinXp: "x15T", sweets: "x7.5T", halloweenBulk: "x5", halloweenLuck: "x2" } },
+            { name: "Ghost Rider", maxLevel: "360B", baseOdds: "25Sp", type: "Noobinial", maxStats: { spookyOof: "4.5T", ghost: "3.6T", pumpkin: "2.7T", candyCorn: "x3", pumpkinXp: "1.8T", sweets: "900B", halloweenBulk: "x11", prism: "x1.2" } },
+            { name: "Headless Horseman", maxLevel: "2500", baseOdds: "200DDe", type: "Noobinial", maxStats: { spookyOof: "125k", ghost: "125k", pumpkin: "62.5k", halloweenSpeed: "x7.5", sweets: "x250k", candyCorn: "x251", halloweenBulk: "x18.5", halloweenLuck: "x10" } }
         ],
         "Witch": [
-            { name: "Broomstick", maxLevel: "N/A", baseOdds: 1.01, type: "Normal" },
-            { name: "Cauldron", maxLevel: "N/A", baseOdds: "100T", type: "Normal" },
-            { name: "Hex Dust", maxLevel: "N/A", baseOdds: "200Sx", type: "Normal" },
-            { name: "Nightbrew", maxLevel: "N/A", baseOdds: "400No", type: "Normal" },
-            { name: "Crow", maxLevel: "N/A", baseOdds: "10UDe", type: "Normal" },
-            { name: "Spellbound", maxLevel: "N/A", baseOdds: "2.5DDe", type: "Normal" },
-            { name: "Moonhex", maxLevel: "N/A", baseOdds: "30DDe", type: "Normal" },
-            { name: "Spellbook", maxLevel: "N/A", baseOdds: "240DDe", type: "Normal" },
-            { name: "Covenmist", maxLevel: "N/A", baseOdds: "1.75TDe", type: "Normal" },
-            { name: "Hagshadow", maxLevel: "N/A", baseOdds: "75De", type: "Noobinial" },
-            { name: "Witchbane", maxLevel: "N/A", baseOdds: "750UDe", type: "Noobinial" },
-            { name: "Eldritch", maxLevel: "N/A", baseOdds: "150TDe", type: "Noobinial" }
+            { name: "Broomstick", maxLevel: "2750", baseOdds: 1.01, type: "Normal", maxStats: { pumpkin: "x2.06k", pumpkinXp: "x8.25k", sweets: "x689", darkMagic: "x1.38k" } },
+            { name: "Cauldron", maxLevel: "7500", baseOdds: "100T", type: "Normal", maxStats: { ghost: "x1.88k", spookyOof: "x2.25k", darkMagic: "x5.25k" } },
+            { name: "Hex Dust", maxLevel: "40000", baseOdds: "200Sx", type: "Normal", maxStats: { ghost: "x20k", pumpkin: "x10k", eyeBalls: "x40k", halloweenBulk: "+5k" } },
+            { name: "Nightbrew", maxLevel: "47500", baseOdds: "400No", type: "Normal", maxStats: { spookyOof: "x19k", pumpkinXp: "x23.79k", sweets: "x47.5k", darkMagic: "x33.29k" } },
+            { name: "Crow", maxLevel: "72500", baseOdds: "10UDe", type: "Normal", maxStats: { ghost: "x36.29k", spookyOof: "x14.5k", pumpkin: "x54.4k", pumpkinXp: "x36.29k", sweets: "x18.1k", darkMagic: "x10.9k" } },
+            { name: "Spellbound", maxLevel: "100k", baseOdds: "2.5DDe", type: "Normal", maxStats: { ghost: "x125k", spookyOof: "x100k", pumpkin: "x75k", pumpkinXp: "x150k", sweets: "x45k", darkMagic: "x35k", eyeBalls: "x75k", halloweenBulk: "+30k" } },
+            { name: "Moonhex", maxLevel: "95k", baseOdds: "30DDe", type: "Normal", maxStats: { ghost: "x119k", spookyOof: "x95k", pumpkin: "x71.3k", pumpkinXp: "x47.5k", sweets: "x23.79k", darkMagic: "x9.5k" } },
+            { name: "Spellbook", maxLevel: "111k", baseOdds: "240DDe", type: "Normal", maxStats: { spells: "x111k", spookyOof: "x111k", spellLuck: "x11.1k", spellBulk: "x2.22k", sweets: "x556k", pumpkin: "x556k", darkMagic: "x55.59k", halloweenBulk: "+60k" } },
+            { name: "Covenmist", maxLevel: "125k", baseOdds: "1.75TDe", type: "Normal", maxStats: { spells: "x188k", spookyOof: "x250k", spellLuck: "x25k", spellBulk: "x6.25k", sweets: "x1.25M", pumpkin: "x938k", darkMagic: "x125k", halloweenBulk: "+90k" } },
+            { name: "Hagshadow", maxLevel: "19.5M", baseOdds: "75De", type: "Noobinial", maxStats: { candyCorn: "x6.25", spookyOof: "x293M", eyeBalls: "x975k", spellBulk: "x11", spellLuck: "x9.75M", spells: "x58.5M", darkMagic: "x29.3M", halloweenBulk: "x8" } },
+            { name: "Witchbane", maxLevel: "60k", baseOdds: "750UDe", type: "Noobinial", maxStats: { candyCorn: "x4.5", spookyOof: "x3M", itemGenerator: "x601", spellBulk: "x6", spellLuck: "x300k", spells: "x600k", darkMagic: "x1.2M", halloweenBulk: "x15" } },
+            { name: "Eldritch", maxLevel: 100, baseOdds: "150TDe", type: "Noobinial", maxStats: { candyCorn: "x51", halloweenSpeed: "x5", itemGenerator: "x6", spellBulk: "x2", spellLuck: "x1k", spells: "x10k", darkMagic: "x20k", halloweenBulk: "x36" } }
+        ],
+        "Thanksgiving": [
+            { name: "Harvest", maxLevel: 225, baseOdds: 1.05, type: "Normal", maxStats: { turkeyOof: "x79.7"} },
+            { name: "Cranberry", maxLevel: 200, baseOdds: "20", type: "Normal", maxStats: { feathers: "x301", thanksgivingBulk: "+14" } },
+            { name: "Cornucopia", maxLevel: 175, baseOdds: "500", type: "Normal", maxStats: { turkeyOof: "x88.5", thanksgivingBulk: "+35", thanksgivingLuck: "x1.75"} },
+            { name: "Gravy", maxLevel: 175, baseOdds: "500k", type: "Normal", maxStats: { thanksgivingBulk: "+50", turkeyOof: "x1.75k", feathers: "x614", turkeyDamage: "x3"} },
+            { name: "Pilgrim", maxLevel: 225, baseOdds: "15M", type: "Normal", maxStats: { turkeyOof: "x2.7k", feathers: "x282", thanksgivingBulk: "+100" } },
+            { name: "Maple", maxLevel: 225, baseOdds: "850M", type: "Normal", maxStats: { turkeyOof: "x1.58k", feathers: "x395", turkeyDamage: "x2", thanksgivingBulk: "+100" } },
+            { name: "Harvest King", maxLevel: "N/A", baseOdds: "1Qn", type: "Noobinial" },
+            { name: "Harvest Lord", maxLevel: "N/A", baseOdds: "200Qn", type: "Noobinial" },
+        ],
+        "Turkey": [
+            { name: "Gobbler", maxLevel: 60, baseOdds: 1.01, type: "Normal", maxStats: { turkeyOof: "x73", pies: "x2.5" } },
+            { name: "Drumstick", maxLevel: 75, baseOdds: "300M", type: "Normal", maxStats: { pies: "x3", feathers: "x170" } },
+            { name: "Wishbone", maxLevel: 75, baseOdds: "5B", type: "Normal", maxStats: { feathers: "x151", turkeyOof: "x451" } },
+            { name: "Roasted", maxLevel: 75, baseOdds: "60B", type: "Normal", maxStats: { turkeyDamage: "x4.5", thanksgivingBulk: "+150", pies: "x8.5" } },
+            { name: "Turkey", maxLevel: 90, baseOdds: "2T", type: "Normal", maxStats: { feathers: "x100", turkeyDamage: "x3" } },
+            { name: "Turkey Lord", maxLevel: 75, baseOdds: "35T", type: "Normal", maxStats: { feathers: "x46", thanksgivingBulk: "+200", turkeyOof: "x38.5" } },
+            { name: "Eternal Feast", maxLevel: 65, baseOdds: "750T", type: "Normal", maxStats: { feathers: "x131", turkeyDamage: "x33.5", turkeyOof: "x66" } },
+            { name: "Harvest Crown", maxLevel: 50, baseOdds: "15Qd", type: "Normal", maxStats: { feathers: "x176", turkeyDamage: "x6", turkeyOof: "x126", thanksgivingBulk: "+350" } },
+            { name: "Thanksgiving", maxLevel: "N/A", baseOdds: "12.5Qn", type: "Noobinial" },
+            { name: "Gratitude", maxLevel: "N/A", baseOdds: "3.5Sx", type: "Noobinial" }
         ]
     }
 };
@@ -591,6 +613,18 @@ const halloweenRpsOutput = document.getElementById("halloweenRpsOutput");
 const standardControls = document.getElementById("standardControls");
 const halloweenControls = document.getElementById("halloweenControls");
 
+const thanksgivingSpeedInput = document.getElementById("thanksgivingSpeedSec");
+const thanksgivingSpeedBoost = document.getElementById("thanksgivingSpeedBoost");
+const thanksgivingBulkInput = document.getElementById("thanksgivingBulk");
+const thanksgivingBulkBoost = document.getElementById("thanksgivingBulkBoost");
+const thanksgivingLuckInput = document.getElementById("thanksgivingLuck");
+const thanksgivingLuckBoost = document.getElementById("thanksgivingLuckBoost");
+const thanksgivingHideInstantToggle = document.getElementById("thanksgivingHideInstantToggle");
+const thanksgivingRpsOutput = document.getElementById("thanksgivingRpsOutput");
+
+const thanksgivingControls = document.getElementById("thanksgivingControls");
+const thanksgivingMetrics = document.getElementById("thanksgivingMetrics");
+
 let activeRealm = "";
 let activeCategory = "";
 
@@ -622,6 +656,14 @@ function saveInputsToStorage() {
     localStorage.setItem("halloween_luckBoost", halloweenLuckBoost ? halloweenLuckBoost.checked : false);
     if (halloweenHideInstantToggle) localStorage.setItem("halloween_hideInstant", halloweenHideInstantToggle.checked);
 
+    localStorage.setItem("thanksgiving_speedSec", thanksgivingSpeedInput ? thanksgivingSpeedInput.value : "");
+    localStorage.setItem("thanksgiving_speedBoost", thanksgivingSpeedBoost ? thanksgivingSpeedBoost.checked : false);
+    localStorage.setItem("thanksgiving_bulk", thanksgivingBulkInput ? thanksgivingBulkInput.value : "");
+    localStorage.setItem("thanksgiving_bulkBoost", thanksgivingBulkBoost ? thanksgivingBulkBoost.checked : false);
+    localStorage.setItem("thanksgiving_luck", thanksgivingLuckInput ? thanksgivingLuckInput.value : "");
+    localStorage.setItem("thanksgiving_luckBoost", thanksgivingLuckBoost ? thanksgivingLuckBoost.checked : false);
+    if (thanksgivingHideInstantToggle) localStorage.setItem("thanksgiving_hideInstant", thanksgivingHideInstantToggle.checked);
+
     localStorage.setItem("active_realm", activeRealm);
     localStorage.setItem("active_category", activeCategory);
 }
@@ -650,6 +692,14 @@ function loadSavedInputs() {
     if (halloweenLuckInput && localStorage.getItem("halloween_luck") !== null) halloweenLuckInput.value = localStorage.getItem("halloween_luck");
     if (halloweenLuckBoost && localStorage.getItem("halloween_luckBoost") !== null) halloweenLuckBoost.checked = localStorage.getItem("halloween_luckBoost") === "true";
     if (halloweenHideInstantToggle && localStorage.getItem("halloween_hideInstant") !== null) halloweenHideInstantToggle.checked = localStorage.getItem("halloween_hideInstant") === "true";
+
+    if (thanksgivingSpeedInput && localStorage.getItem("thanksgiving_speedSec") !== null) thanksgivingSpeedInput.value = localStorage.getItem("thanksgiving_speedSec");
+    if (thanksgivingSpeedBoost && localStorage.getItem("thanksgiving_speedBoost") !== null) thanksgivingSpeedBoost.checked = localStorage.getItem("thanksgiving_speedBoost") === "true";
+    if (thanksgivingBulkInput && localStorage.getItem("thanksgiving_bulk") !== null) thanksgivingBulkInput.value = localStorage.getItem("thanksgiving_bulk");
+    if (thanksgivingBulkBoost && localStorage.getItem("thanksgiving_bulkBoost") !== null) thanksgivingBulkBoost.checked = localStorage.getItem("thanksgiving_bulkBoost") === "true";
+    if (thanksgivingLuckInput && localStorage.getItem("thanksgiving_luck") !== null) thanksgivingLuckInput.value = localStorage.getItem("thanksgiving_luck");
+    if (thanksgivingLuckBoost && localStorage.getItem("thanksgiving_luckBoost") !== null) thanksgivingLuckBoost.checked = localStorage.getItem("thanksgiving_luckBoost") === "true";
+    if (thanksgivingHideInstantToggle && localStorage.getItem("thanksgiving_hideInstant") !== null) thanksgivingHideInstantToggle.checked = localStorage.getItem("thanksgiving_hideInstant") === "true";
 }
 
 function initRealms() {
@@ -706,17 +756,23 @@ const halloweenMetrics = document.getElementById("halloweenMetrics");
 
 function calculate() {
     const isHalloweenCategory = ["spooky", "pumpkin", "witch"].includes(activeCategory.toLowerCase());
+    const isThanksgivingCategory = ["thanksgiving", "turkey"].includes(activeCategory.toLowerCase());
     const isPrismCategory = activeCategory.toLowerCase().includes("prism");
 
-    // Toggle Dynamic Halloween Background
+    // Toggle Dynamic Backgrounds
     document.body.classList.toggle("halloween-active", isHalloweenCategory);
+    document.body.classList.toggle("thanksgiving-active", isThanksgivingCategory);
 
-    // Toggle Input Panel & Metric Box Visibility
-    if (standardControls) standardControls.style.display = isHalloweenCategory ? "none" : "block";
+    // Toggle Input Panel Visibility
+    const isEventCategory = isHalloweenCategory || isThanksgivingCategory;
+    if (standardControls) standardControls.style.display = isEventCategory ? "none" : "block";
     if (halloweenControls) halloweenControls.style.display = isHalloweenCategory ? "block" : "none";
+    if (thanksgivingControls) thanksgivingControls.style.display = isThanksgivingCategory ? "block" : "none";
 
-    if (standardPrismMetrics) standardPrismMetrics.style.display = isHalloweenCategory ? "none" : "block";
+    // Toggle Metric Box Visibility
+    if (standardPrismMetrics) standardPrismMetrics.style.display = isEventCategory ? "none" : "block";
     if (halloweenMetrics) halloweenMetrics.style.display = isHalloweenCategory ? "block" : "none";
+    if (thanksgivingMetrics) thanksgivingMetrics.style.display = isThanksgivingCategory ? "block" : "none";
 
     // 1. Calculate Standard Rune Stats
     let rawSpeedSec = parseFloat(speedInput.value);
@@ -742,10 +798,19 @@ function calculate() {
     let hallowFinalLuck = parseSuffixNumber(halloweenLuckInput?.value) * (halloweenLuckBoost?.checked ? 2.0 : 1.0);
     const hallowTotalRps = hallowFinalSpeed * hallowFinalBulk;
 
+    // 4. Calculate Thanksgiving Stats
+    let rawThanksSpeedSec = parseFloat(thanksgivingSpeedInput?.value || 0.2);
+    if (isNaN(rawThanksSpeedSec) || rawThanksSpeedSec < 0.05) rawThanksSpeedSec = 0.05;
+    let thanksFinalSpeed = (1 / rawThanksSpeedSec) * (thanksgivingSpeedBoost?.checked ? 2.0 : 1.0);
+    let thanksFinalBulk = parseSuffixNumber(thanksgivingBulkInput?.value) * (thanksgivingBulkBoost?.checked ? 2.0 : 1.0);
+    let thanksFinalLuck = parseSuffixNumber(thanksgivingLuckInput?.value) * (thanksgivingLuckBoost?.checked ? 2.0 : 1.0);
+    const thanksTotalRps = thanksFinalSpeed * thanksFinalBulk;
+
     // Update RPS Displays
     if (rpsOutput) rpsOutput.innerText = formatSuffixNumber(runeTotalRps);
     if (prismRpsOutput) prismRpsOutput.innerText = formatSuffixNumber(prismTotalRps);
     if (halloweenRpsOutput) halloweenRpsOutput.innerText = formatSuffixNumber(hallowTotalRps);
+    if (thanksgivingRpsOutput) thanksgivingRpsOutput.innerText = formatSuffixNumber(thanksTotalRps);
 
     if (!activeRealm || !activeCategory || !gameData[activeRealm] || !gameData[activeRealm][activeCategory]) {
         if (runeResultContainer) runeResultContainer.innerHTML = "";
@@ -755,20 +820,24 @@ function calculate() {
     const itemsList = gameData[activeRealm][activeCategory];
     if (!itemsList || itemsList.length === 0) return;
 
-    const shouldHideInstant = isHalloweenCategory
-        ? (halloweenHideInstantToggle ? halloweenHideInstantToggle.checked : false)
-        : isPrismCategory
-            ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
-            : (hideInstantToggle ? hideInstantToggle.checked : false);
+    const shouldHideInstant = isThanksgivingCategory
+        ? (thanksgivingHideInstantToggle ? thanksgivingHideInstantToggle.checked : false)
+        : isHalloweenCategory
+            ? (halloweenHideInstantToggle ? halloweenHideInstantToggle.checked : false)
+            : isPrismCategory
+                ? (prismHideInstantToggle ? prismHideInstantToggle.checked : false)
+                : (hideInstantToggle ? hideInstantToggle.checked : false);
 
     let htmlOutput = "";
 
     itemsList.forEach(item => {
         const isNoobinial = item.type.toLowerCase().includes("noobinial");
 
-        // Pick current luck and RPS based on active category type
         let currentLuck, currentRps;
-        if (isHalloweenCategory) {
+        if (isThanksgivingCategory) {
+            currentLuck = thanksFinalLuck;
+            currentRps = thanksTotalRps;
+        } else if (isHalloweenCategory) {
             currentLuck = hallowFinalLuck;
             currentRps = hallowTotalRps;
         } else if (isPrismCategory) {
@@ -857,6 +926,27 @@ function calculate() {
             chariotNoobPower: "Max Chariot Noob Power",
             colosseumDamage: "Max Colosseum Damage",
             colosseumHp: "Max Colosseum HP",
+            spookyOof: "Max Spooky Oof",
+            ghost: "Max Ghost",
+            pumpkin: "Max Pumpkin",
+            pumpkinXp: "Max Pumpkin XP",
+            sweets: "Max Sweets",
+            candyCorn: "Max Candy Corn",
+            halloweenLuck: "Max Halloween Luck",
+            halloweenBulk: "Max Halloween Bulk",
+            halloweenSpeed: "Max Halloween Speed",
+            darkMagic: "Max Dark Magic",
+            eyeBalls: "Max Eyeballs",
+            spells: "Max Spells",
+            spellLuck: "Max Spell Luck",
+            spellBulk: "Max Spell Bulk",
+            itemGenerator: "Max Item Generator",
+            turkeyOof: "Max Turkey Oof",
+            turkeyDamage: "Max Turkey Damage",
+            feathers: "Max Feathers",
+            pies: "Max Pies",
+            thanksgivingLuck: "Max Thanksgiving Luck",
+            thanksgivingBulk: "Max Thanksgiving Bulk",
         };
 
         // Dynamically build stat rows for stats that exist in gameData
@@ -938,6 +1028,23 @@ if (prismSpeedInput) {
     prismSpeedInput.addEventListener("blur", () => {
         if (parseFloat(prismSpeedInput.value) < 0.05 || isNaN(parseFloat(prismSpeedInput.value))) {
             prismSpeedInput.value = "0.05";
+            calculate();
+        }
+    });
+}
+
+[thanksgivingSpeedInput, thanksgivingSpeedBoost, thanksgivingBulkInput, thanksgivingBulkBoost, thanksgivingLuckInput, thanksgivingLuckBoost, thanksgivingHideInstantToggle
+].forEach(el => {
+    if (el) {
+        el.addEventListener("input", calculate);
+        el.addEventListener("change", calculate);
+    }
+});
+
+if (thanksgivingSpeedInput) {
+    thanksgivingSpeedInput.addEventListener("blur", () => {
+        if (parseFloat(thanksgivingSpeedInput.value) < 0.05 || isNaN(parseFloat(thanksgivingSpeedInput.value))) {
+            thanksgivingSpeedInput.value = "0.05";
             calculate();
         }
     });

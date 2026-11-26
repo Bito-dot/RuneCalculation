@@ -147,6 +147,52 @@
                 </div>
             </div>
 
+            <!-- THANKSGIVING CONTROLS PANEL -->
+            <div id="thanksgivingControls" style="display: none;">
+                <div class="inputs-row">
+                    <!-- Thanksgiving Speed Input -->
+                    <div class="input-group">
+                        <label for="thanksgivingSpeedSec">Thanksgiving Speed (Sec/Roll)</label>
+                        <div class="field-with-boost">
+                            <input type="number" id="thanksgivingSpeedSec" value="0.2" step="0.01" min="0.05">
+                            <label class="boost-label">
+                                <input type="checkbox" id="thanksgivingSpeedBoost"> 2x
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Thanksgiving Bulk Input -->
+                    <div class="input-group">
+                        <label for="thanksgivingBulk">Thanksgiving Bulk</label>
+                        <div class="field-with-boost">
+                            <input type="text" id="thanksgivingBulk" value="1">
+                            <label class="boost-label">
+                                <input type="checkbox" id="thanksgivingBulkBoost"> 2x
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Thanksgiving Luck Input -->
+                    <div class="input-group">
+                        <label for="thanksgivingLuck">Thanksgiving Luck</label>
+                        <div class="field-with-boost">
+                            <input type="text" id="thanksgivingLuck" value="1">
+                            <label class="boost-label">
+                                <input type="checkbox" id="thanksgivingLuckBoost"> 2x
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thanksgiving Toggles Row -->
+                <div class="toggles-row">
+                    <label class="hide-toggle-label">
+                        <input type="checkbox" id="thanksgivingHideInstantToggle">
+                        <span>Hide Instant Collect Thanksgiving Runes</span>
+                    </label>
+                </div>
+            </div>
+
             <hr class="divider">
 
             <!-- Horizontal Realm Buttons -->
@@ -170,6 +216,9 @@
             </div>
             <div id="halloweenMetrics" style="display: none;">
                 <div>Total Halloween RPS: <span id="halloweenRpsOutput">0.00</span></div>
+            </div>
+            <div id="thanksgivingMetrics" style="display: none;">
+                <div>Total Thanksgiving RPS: <span id="thanksgivingRpsOutput">0.00</span></div>
             </div>
         </div>
 
